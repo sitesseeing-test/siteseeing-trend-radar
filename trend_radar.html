@@ -9,19 +9,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --red:       #E94F4E;
-      --red-dark:  #c93f3e;
-      --red-tint:  #fdf2f2;
-      --red-light: #fce8e8;
-      --black:     #111111;
-      --gray-900:  #1a1a1a;
-      --gray-700:  #3d3d3d;
-      --gray-500:  #6b6b6b;
-      --gray-300:  #c4c4c4;
-      --gray-200:  #e8e8e8;
-      --gray-100:  #f4f4f4;
-      --gray-50:   #f9f9f9;
-      --white:     #ffffff;
+      --red:      #E94F4E;
+      --black:    #111111;
+      --gray-900: #1a1a1a;
+      --gray-700: #3d3d3d;
+      --gray-500: #6b6b6b;
+      --gray-300: #c4c4c4;
+      --gray-200: #e8e8e8;
+      --gray-100: #f4f4f4;
+      --gray-50:  #f9f9f9;
+      --white:    #ffffff;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -40,10 +37,7 @@
       padding: 56px 48px 48px;
     }
 
-    .header-inner {
-      max-width: 1120px;
-      margin: 0 auto;
-    }
+    .header-inner { max-width: 1120px; margin: 0 auto; }
 
     .header-logo {
       display: flex;
@@ -60,8 +54,7 @@
     }
 
     .header-logo-dot {
-      width: 6px;
-      height: 6px;
+      width: 6px; height: 6px;
       border-radius: 50%;
       background: var(--red);
       flex-shrink: 0;
@@ -94,7 +87,6 @@
 
     .header-intro {
       font-size: 16px;
-      font-weight: 400;
       color: #c0c0c0;
       max-width: 520px;
       line-height: 1.7;
@@ -102,7 +94,6 @@
 
     .header-stats {
       display: flex;
-      gap: 0;
       margin-top: 48px;
       padding-top: 32px;
       border-top: 1px solid #222;
@@ -114,9 +105,7 @@
       border-right: 1px solid #222;
     }
 
-    .stat:last-child {
-      border-right: none;
-    }
+    .stat:last-child { border-right: none; }
 
     .stat-number {
       display: block;
@@ -130,7 +119,6 @@
 
     .stat-label {
       font-size: 12px;
-      font-weight: 400;
       color: #999;
     }
 
@@ -154,7 +142,6 @@
     .nav-tab {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
       padding: 18px 24px;
       font-size: 13px;
       font-weight: 500;
@@ -214,7 +201,6 @@
     .section-count {
       margin-left: auto;
       font-size: 12px;
-      font-weight: 400;
       color: var(--gray-300);
     }
 
@@ -254,35 +240,18 @@
       letter-spacing: 0.01em;
     }
 
-    .badge-dot {
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-    }
+    .badge-dot { width: 5px; height: 5px; border-radius: 50%; }
 
-    .badge-hoch {
-      background: var(--red);
-      color: var(--white);
-    }
+    .badge-hoch { background: var(--red); color: var(--white); }
     .badge-hoch .badge-dot { background: rgba(255,255,255,0.6); }
 
-    .badge-mittel {
-      background: var(--gray-900);
-      color: var(--white);
-    }
+    .badge-mittel { background: var(--gray-900); color: var(--white); }
     .badge-mittel .badge-dot { background: rgba(255,255,255,0.4); }
 
-    .badge-niedrig {
-      background: var(--gray-200);
-      color: var(--gray-500);
-    }
+    .badge-niedrig { background: var(--gray-200); color: var(--gray-500); }
     .badge-niedrig .badge-dot { background: var(--gray-300); }
 
-    .badge-zeit {
-      background: var(--gray-100);
-      color: var(--gray-700);
-      font-weight: 500;
-    }
+    .badge-zeit { background: var(--gray-100); color: var(--gray-700); font-weight: 500; }
 
     .trend-titel {
       font-size: 17px;
@@ -295,12 +264,10 @@
 
     .trend-kurzfassung {
       font-size: 13.5px;
-      font-weight: 400;
       color: var(--gray-700);
       line-height: 1.7;
     }
 
-    /* Expand */
     .trend-card-footer {
       margin-top: 20px;
       margin-left: -28px;
@@ -326,10 +293,7 @@
       font-family: inherit;
     }
 
-    .expand-btn:hover {
-      color: var(--gray-700);
-      background: var(--gray-100);
-    }
+    .expand-btn:hover { color: var(--gray-700); background: var(--gray-100); }
 
     .expand-icon {
       display: inline-block;
@@ -352,93 +316,66 @@
       line-height: 1.8;
     }
 
-    /* ── DIVIDER ── */
-    .section-divider {
-      height: 1px;
-      background: var(--gray-200);
-      margin: 0 0 72px;
+    /* ── INLINE INSIGHTS ── */
+    .section-insights {
+      margin-top: 1px;
+      border: 1px solid var(--gray-200);
+      border-top: none;
+      background: #fdf6f6;
     }
 
-    /* ── INSIGHTS ── */
-    .insights-wrap {
-      background: var(--black);
-      padding: 56px 48px 64px;
-      margin-top: -80px;
-      margin-bottom: 0;
+    .section-insights-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 20px 28px 16px;
+      border-bottom: 1px solid #f0dede;
     }
 
-    .insights-inner {
-      max-width: 1120px;
-      margin: 0 auto;
-    }
-
-    .insights-tag {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
+    .section-insights-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--red);
-      margin-bottom: 12px;
     }
 
-    .insights-title {
-      font-size: clamp(24px, 3vw, 36px);
-      font-weight: 700;
-      letter-spacing: -0.035em;
-      color: var(--white);
-      margin-bottom: 12px;
-      line-height: 1.1;
+    .section-insights-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gray-700);
+      letter-spacing: -0.01em;
     }
 
-    .insights-subtitle {
-      font-size: 14px;
-      color: #666;
-      max-width: 520px;
-      line-height: 1.7;
-      margin-bottom: 48px;
-    }
-
-    .insights-grid {
+    .insight-cards-row {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
       gap: 1px;
-      background: #222;
-      border: 1px solid #222;
+      background: #f0dede;
     }
 
-    .insight-card {
-      background: #161616;
-      padding: 28px;
+    .insight-card-inline {
+      background: #fdf6f6;
+      padding: 24px 28px;
       transition: background 0.15s;
     }
 
-    .insight-card:hover { background: #1c1c1c; }
+    .insight-card-inline:hover { background: #fceaea; }
 
-    .insight-number {
-      font-size: 11px;
+    .insight-card-inline-title {
+      font-size: 14px;
       font-weight: 700;
-      color: var(--red);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 14px;
-      display: block;
-    }
-
-    .insight-titel {
-      font-size: 15px;
-      font-weight: 700;
-      color: var(--white);
+      color: var(--gray-900);
       letter-spacing: -0.02em;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       line-height: 1.35;
     }
 
-    .insight-begruendung {
+    .insight-card-inline-text {
       font-size: 13px;
-      color: #b8b8b8;
-      line-height: 1.75;
-      margin-bottom: 20px;
+      color: var(--gray-700);
+      line-height: 1.7;
+      margin-bottom: 14px;
     }
 
     .insight-massnahme-label {
@@ -447,20 +384,27 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--red);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .insight-massnahme {
       font-size: 12.5px;
-      color: #d4d4d4;
+      color: var(--gray-700);
       line-height: 1.65;
       padding-left: 12px;
       border-left: 2px solid var(--red);
     }
 
+    /* ── DIVIDER ── */
+    .section-divider {
+      height: 1px;
+      background: var(--gray-200);
+      margin: 0 0 72px;
+    }
+
     /* ── FOOTER ── */
     footer {
-      background: #0a0a0a;
+      background: var(--black);
       padding: 24px 48px;
     }
 
@@ -474,15 +418,8 @@
       gap: 12px;
     }
 
-    .footer-text {
-      font-size: 12px;
-      color: #999;
-    }
-
-    .footer-text strong {
-      color: #ccc;
-      font-weight: 500;
-    }
+    .footer-text { font-size: 12px; color: #999; }
+    .footer-text strong { color: #ccc; font-weight: 500; }
 
     .footer-badge {
       display: inline-flex;
@@ -496,22 +433,14 @@
       letter-spacing: 0.02em;
     }
 
-    .footer-badge span {
-      color: var(--red);
-      font-weight: 600;
-    }
+    .footer-badge span { color: var(--red); font-weight: 600; }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 740px) {
-      .header, .main, .insights-wrap, footer {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-      .trend-grid, .insights-grid {
-        grid-template-columns: 1fr;
-      }
+      .header, .main, footer { padding-left: 20px; padding-right: 20px; }
+      .trend-grid, .insight-cards-row { grid-template-columns: 1fr; }
       .header h1 { font-size: 32px; }
-      .header-stats { gap: 0; flex-wrap: wrap; }
+      .header-stats { flex-wrap: wrap; }
       .stat { padding-right: 24px; margin-right: 24px; }
     }
   </style>
@@ -530,7 +459,7 @@
 
     <span class="header-tag">Trend Radar · April 2026</span>
     <h1>Was bewegt<br>Design heute.</h1>
-    <p class="header-intro">Kuratierte Analyse aktueller Trends in UX/UI, Webdesign und Brand Design – mit konkreten Handlungsempfehlungen für das Siteseeing-Team.</p>
+    <p class="header-intro">Aktuelle Trends in UX/UI, Webdesign und Brand Design – jeweils mit konkreten Handlungsempfehlungen für das Siteseeing-Team.</p>
 
     <div class="header-stats">
       <div class="stat">
@@ -556,20 +485,20 @@
     <a class="nav-tab active" href="#ux-ui">UX / UI Design</a>
     <a class="nav-tab" href="#webdesign">Webdesign</a>
     <a class="nav-tab" href="#brand-design">Brand Design</a>
-    <a class="nav-tab" href="#siteseeing">Für Siteseeing</a>
   </div>
 </nav>
 
 <!-- MAIN -->
 <main class="main">
 
-  <!-- UX/UI -->
+  <!-- ── UX / UI DESIGN ── -->
   <section class="section" id="ux-ui">
     <div class="section-header">
       <span class="section-label">01</span>
       <h2 class="section-title">UX / UI Design</h2>
-      <span class="section-count">4 Trends</span>
+      <span class="section-count">4 Trends · 2 Insights</span>
     </div>
+
     <div class="trend-grid">
 
       <div class="trend-card">
@@ -580,10 +509,7 @@
         <h3 class="trend-titel">AI als Design-Kollaborator</h3>
         <p class="trend-kurzfassung">73 % der Designer sehen AI als wichtigsten Treiber 2026 – 93 % setzen bereits täglich Generative-AI-Tools ein. Figma AI und ähnliche Suiten verschmelzen Konzept, Design und Development in einer Plattform.</p>
         <div class="trend-card-footer">
-          <button class="expand-btn" onclick="toggle(this)">
-            Detailanalyse
-            <span class="expand-icon">▾</span>
-          </button>
+          <button class="expand-btn" onclick="toggle(this)">Detailanalyse <span class="expand-icon">▾</span></button>
           <div class="trend-detail">
             <p>AI hat sich vom Experiment zum festen Bestandteil des Design-Workflows entwickelt. Tools wie Figma Make erlauben es, vom ersten Wireframe bis zur produktionsreifen Komponente ohne App-Wechsel zu arbeiten. UX Pilot AI verarbeitet Forschungsdaten automatisch, clustert Themen und generiert daraus Flowdiagramme und Wireframes. Adobe Firefly ergänzt den Workflow mit KI-generierten Bild-, Video- und Audio-Assets. Laut Figmas 2025 AI Report glauben 78 % der Designer und Developer, dass AI ihre Arbeitseffizienz messbar steigert. Entscheidend ist dabei der strategische Einsatz: Marken, die AI unsichtbar im Hintergrund nutzen, übertreffen diejenigen, die AI als Showpiece einsetzen.</p>
           </div>
@@ -598,10 +524,7 @@
         <h3 class="trend-titel">Generative UI & Adaptive Interfaces</h3>
         <p class="trend-kurzfassung">Interfaces verändern sich in Echtzeit auf Basis von Nutzerdaten und Kontext – die Oberfläche ist nicht mehr statisch, sondern dynamisch generiert. User delegieren zunehmend Aufgaben an AI-Schichten, die über der UI liegen.</p>
         <div class="trend-card-footer">
-          <button class="expand-btn" onclick="toggle(this)">
-            Detailanalyse
-            <span class="expand-icon">▾</span>
-          </button>
+          <button class="expand-btn" onclick="toggle(this)">Detailanalyse <span class="expand-icon">▾</span></button>
           <div class="trend-detail">
             <p>Generative UI bezeichnet Interfaces, die sich nicht nur anpassen, sondern aktiv aus dem Nutzungskontext heraus neu erzeugt werden. Das bedeutet, dass Onboarding für Neulinge anders aussieht als für erfahrene Nutzer, und dass sich Inhalte und Layout nach Tageszeit, Gerät und Verhaltensmustern verändern. User verbringen dadurch weniger Zeit mit aktiver Navigation und delegieren mehr Aufgaben an AI-Schichten. Multimodale Interfaces, die Sprache, Touch und visuelle Elemente situationsgerecht kombinieren, werden zum neuen Standard. Dieser Wandel erfordert ein grundlegendes Umdenken im Interface-Design: weg von festen Layouts hin zu Regelwerken, die die Basis für dynamisch erzeugte Oberflächen bilden.</p>
           </div>
@@ -616,10 +539,7 @@
         <h3 class="trend-titel">Liquid Glass UI & Spatial Computing</h3>
         <p class="trend-kurzfassung">Apples Designsprache prägt 2026 einen prägenden visuellen Trend: Oberflächen wirken flüssig, transluzent und bewegt. Spatial Computing mit Apple Vision Pro und Meta Quest treibt 3D-Environments als neue UI-Paradigmen voran.</p>
         <div class="trend-card-footer">
-          <button class="expand-btn" onclick="toggle(this)">
-            Detailanalyse
-            <span class="expand-icon">▾</span>
-          </button>
+          <button class="expand-btn" onclick="toggle(this)">Detailanalyse <span class="expand-icon">▾</span></button>
           <div class="trend-detail">
             <p>Liquid Glass UI kehrt Tiefe, Dynamik und visuelle Textur ins Interface zurück – als Reaktion auf jahrelangen Flachdesign-Minimalismus. Transluzente Schichten, weiche Übergänge und bewegte Oberflächen erzeugen ein Gefühl von Raum und Materialität. Gleichzeitig öffnet Spatial Computing mit Headsets wie Apple Vision Pro und Meta Quest eine neue Dimension des UI-Designs, in der dreidimensionale Environments zur Grundlage von Produkten werden. Designer müssen zunehmend für räumliche Kontexte entwickeln, in denen klassische 2D-Konventionen nicht mehr gelten. Diese beiden Trends – materiell-flüssige Oberflächen und räumliche Interfaces – teilen dieselbe Richtung: das Interface soll sich wie ein physischer Raum anfühlen.</p>
           </div>
@@ -634,10 +554,7 @@
         <h3 class="trend-titel">Accessibility & Explainable AI als Standard</h3>
         <p class="trend-kurzfassung">Accessibility ist 2026 kein Checklist-Punkt mehr, sondern integraler Designbestandteil – 1 von 5 Personen weltweit erlebt digitale Produkte anders. Gleichzeitig brauchen Nutzer Vertrauen in KI-Entscheidungen durch transparente Kommunikation.</p>
         <div class="trend-card-footer">
-          <button class="expand-btn" onclick="toggle(this)">
-            Detailanalyse
-            <span class="expand-icon">▾</span>
-          </button>
+          <button class="expand-btn" onclick="toggle(this)">Detailanalyse <span class="expand-icon">▾</span></button>
           <div class="trend-detail">
             <p>50 % der Designer priorisieren Accessibility bereits von Beginn an, und 53 % erwarten, dass AI-gestützte Accessibility-Tools 2026 eine Schlüsselrolle spielen. Parallel dazu wächst die Anforderung an Explainable AI: Produkte müssen kommunizieren, warum eine KI-Entscheidung getroffen wurde, und Nutzern ermöglichen, einzugreifen. Best Practices umfassen das Anzeigen von Reasoning upfront, verständliche Sprache statt technischem Jargon und klare Eingriffsmöglichkeiten. Privacy-First Design verstärkt diesen Trend: User erwarten klare Einwilligungen, einfache Einstellungen und ehrliche Datenkommunikation. Gemeinsam bilden Accessibility und Explainable AI die Grundlage für Nutzervertrauen – das entscheidende Differenzierungsmerkmal in einer zunehmend KI-durchdrungenen Produktwelt.</p>
           </div>
@@ -645,17 +562,43 @@
       </div>
 
     </div>
+
+    <!-- UX Insights -->
+    <div class="section-insights">
+      <div class="section-insights-header">
+        <span class="section-insights-label">Für Siteseeing</span>
+        <span class="section-insights-title">Was bedeuten diese Trends konkret?</span>
+      </div>
+      <div class="insight-cards-row">
+
+        <div class="insight-card-inline">
+          <h4 class="insight-card-inline-title">AI in den UX-Prozess integrieren – jetzt</h4>
+          <p class="insight-card-inline-text">93 % der Designer setzen AI-Tools bereits ein. Figma AI und UX Pilot AI können Siteseeing's Discovery & Research Phase nachweislich beschleunigen und Research-Ergebnisse schneller in Prototypen überführen. Wer jetzt eine eigene Praxis entwickelt, hat in 12 Monaten einen echten Kompetenzvorsprung.</p>
+          <p class="insight-massnahme-label">Sofortmaßnahme</p>
+          <p class="insight-massnahme">In einem laufenden Projekt Figma AI gezielt für einen Schritt einsetzen (z.B. Wireframe-Generierung aus Research-Clustern) und Erfahrungen intern dokumentieren.</p>
+        </div>
+
+        <div class="insight-card-inline">
+          <h4 class="insight-card-inline-title">Accessibility aktiv als Qualitätsmerkmal vermarkten</h4>
+          <p class="insight-card-inline-text">1 von 5 Menschen erlebt digitale Produkte anders. Siteseeing's analytische Herangehensweise ist der ideale Ausgangspunkt, Accessibility nicht als Compliance-Thema, sondern als strategisches Qualitätsmerkmal zu positionieren – und damit von Agenturen abzugrenzen, die es als Afterthought behandeln.</p>
+          <p class="insight-massnahme-label">Sofortmaßnahme</p>
+          <p class="insight-massnahme">Accessibility-Audit für ein Referenzprojekt durchführen (axe DevTools oder WAVE) und Ergebnisse als Case Study oder LinkedIn-Post teilen.</p>
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <div class="section-divider"></div>
 
-  <!-- WEBDESIGN -->
+  <!-- ── WEBDESIGN ── -->
   <section class="section" id="webdesign">
     <div class="section-header">
       <span class="section-label">02</span>
       <h2 class="section-title">Webdesign</h2>
-      <span class="section-count">4 Trends</span>
+      <span class="section-count">4 Trends · 2 Insights</span>
     </div>
+
     <div class="trend-grid">
 
       <div class="trend-card">
@@ -666,10 +609,7 @@
         <h3 class="trend-titel">Performance-First Design</h3>
         <p class="trend-kurzfassung">Performance ist 2026 kein Afterthought mehr, sondern Teil der Designdiskussion von Tag 1. 100 ms Ladezeit-Verzögerung kann Conversions um 7 % senken – Mobile-First bedeutet „instant feel".</p>
         <div class="trend-card-footer">
-          <button class="expand-btn" onclick="toggle(this)">
-            Detailanalyse
-            <span class="expand-icon">▾</span>
-          </button>
+          <button class="expand-btn" onclick="toggle(this)">Detailanalyse <span class="expand-icon">▾</span></button>
           <div class="trend-detail">
             <p>Der Paradigmenwechsel zu Server-First Architecture ist 2026 in vollem Gange: React Server Components und Server-Side Rendering werden zum Standard, nur das notwendige JavaScript wird an den Client gesendet. Das Ergebnis sind schlanke, schnelle Experiences mit geringem Client-Side-Overhead als Qualitätsmerkmal. Micro-Interactions werden mit Zurückhaltung eingesetzt – Sinnhaftigkeit vor Show. Nike und Ralph Lauren demonstrieren, wie Scroll-Trigger, Button-Ripples und animierte States den User Journey verbessern, ohne Performance zu belasten. Strategisches 3D bedeutet: ein gezielt eingesetztes 3D-Element schlägt eine vollständig 3D-gerenderte Seite sowohl in Performance als auch in Conversion. Performance ist damit zur Designdisziplin geworden, die Kreativität und Technik gemeinsam lösen müssen.</p>
           </div>
@@ -684,10 +624,7 @@
         <h3 class="trend-titel">Expressive Typography & Bold Visuals</h3>
         <p class="trend-kurzfassung">Schrift übernimmt 2026 eine narrative Funktion: Custom Fonts, überdimensionale Headlines und Motion-Typography werden zum Differenzierungsmerkmal. Kräftige, gesättigte Farbpaletten kehren zurück – befeuert durch Y2K-Nostalgie und Dopamine-Design.</p>
         <div class="trend-card-footer">
-          <button class="expand-btn" onclick="toggle(this)">
-            Detailanalyse
-            <span class="expand-icon">▾</span>
-          </button>
+          <button class="expand-btn" onclick="toggle(this)">Detailanalyse <span class="expand-icon">▾</span></button>
           <div class="trend-detail">
             <p>Variable Fonts, die auf Interaktion oder Kontext reagieren, kinetisches Lettering und dynamische Font-Pairings setzen Marken und Seiten visuell voneinander ab. Typografie ist nicht mehr nur Träger von Information, sondern übernimmt die Rolle von Bildsprache und Markenstimme. Parallel dazu kehren Bold Color Palettes zurück: Neon-Gradienten, High-Contrast-Pairings und spielerische Farbtöne ersetzen den minimalistischen Ton der vergangenen Jahre. Befeuert wird dieser Trend durch Y2K-Nostalgie und die Dopamine-Design-Ästhetik, die auf starke visuelle Reize setzt. Cyberbrutalism ergänzt das Bild: ASCII-inspirierte Visuals, Glitch-Effekte und Pixel Art als authentische Digital-First-Ästhetik, die frühe Computerkultur zitiert.</p>
           </div>
@@ -702,10 +639,7 @@
         <h3 class="trend-titel">AI-Driven Personalization & Generative Content</h3>
         <p class="trend-kurzfassung">AI analysiert Besuchermuster und passt das Interface in Echtzeit an – Returning Customers sehen anderen Hero-Content als Erstbesucher. AI-generierter Content ist 2026 nicht mehr als solcher erkennbar.</p>
         <div class="trend-card-footer">
-          <button class="expand-btn" onclick="toggle(this)">
-            Detailanalyse
-            <span class="expand-icon">▾</span>
-          </button>
+          <button class="expand-btn" onclick="toggle(this)">Detailanalyse <span class="expand-icon">▾</span></button>
           <div class="trend-detail">
             <p>AI-Driven Personalization geht über simple Produktempfehlungen hinaus: Gesamte Seitenlayouts, Hero-Bilder und Call-to-Actions werden dynamisch auf den jeweiligen Besucher zugeschnitten. E-Commerce-Plattformen nutzen Browsing-History und Session-Verhalten, um Sortierung und Darstellung in Echtzeit anzupassen. AI-generierter Content hat 2026 die qualitative Schwelle überschritten – hochauflösende, ultra-realistische Bilder und Videos ohne erkennbaren „AI-Look" sind Standard-Produktionswerkzeug. Dies verändert den Workflow von Webdesign-Projekten grundlegend: Contentproduktion wird schneller und individueller, erfordert aber neue Governance-Strukturen für Konsistenz und Markenkonformität. Die Kombination aus dynamischer Personalisierung und AI-generiertem Content macht das Web zu einem Medium, das sich für jeden Nutzer anders darstellt.</p>
           </div>
@@ -720,10 +654,7 @@
         <h3 class="trend-titel">3D, Taktiles Design & Immersive Experiences</h3>
         <p class="trend-kurzfassung">Bewegung weg von statischen Bildern hin zu immersiven 3D-Erlebnissen – WebGL mit interaktiven Modellen, Scroll-getriggerten Animationen und AR-Previews. Volumetrisches und taktiles Design macht UI greifbarer.</p>
         <div class="trend-card-footer">
-          <button class="expand-btn" onclick="toggle(this)">
-            Detailanalyse
-            <span class="expand-icon">▾</span>
-          </button>
+          <button class="expand-btn" onclick="toggle(this)">Detailanalyse <span class="expand-icon">▾</span></button>
           <div class="trend-detail">
             <p>Taktiles und volumetrisches Design nutzt soft, puffy und squishy Texturen kombiniert mit hyper-realistischen Elementen, um Seiten physisch erfahrbar zu machen. WebGL-basierte interaktive 3D-Modelle erlauben es Nutzern, Produkte vor dem Kauf räumlich zu erleben – besonders relevant im E-Commerce. AR-Previews erweitern diese Immersion in den physischen Raum des Nutzers. Der Schlüssel liegt im strategischen Einsatz: Nicht jede Seite braucht 3D, aber ein gezieltes immersives Element kann die Verweildauer und emotionale Bindung deutlich steigern. Ambient UI ist die ruhigere Variante dieses Trends – Interfaces, die sich der Umgebung anpassen und Computing unsichtbar in den Hintergrund treten lassen, während das Erlebnis im Vordergrund bleibt.</p>
           </div>
@@ -731,17 +662,43 @@
       </div>
 
     </div>
+
+    <!-- Webdesign Insights -->
+    <div class="section-insights">
+      <div class="section-insights-header">
+        <span class="section-insights-label">Für Siteseeing</span>
+        <span class="section-insights-title">Was bedeuten diese Trends konkret?</span>
+      </div>
+      <div class="insight-cards-row">
+
+        <div class="insight-card-inline">
+          <h4 class="insight-card-inline-title">Performance als Designargument im Kundengespräch</h4>
+          <p class="insight-card-inline-text">100 ms Ladezeit-Verzögerung = 7 % Conversion-Verlust: Diese Zahl macht Performance-First Design zum handfesten Businessargument. Für Kunden wie etracker und H2 Mobility, bei denen Conversion direkt messbar ist, stärkt dieser Ansatz Siteseeing's Position als strategischer Partner – nicht nur als Designdienstleister.</p>
+          <p class="insight-massnahme-label">Sofortmaßnahme</p>
+          <p class="insight-massnahme">Einen kostenlosen Performance-Check für einen Bestandskunden durchführen (Lighthouse / PageSpeed Insights) und die Ergebnisse als Grundlage für ein Optimierungsgespräch nutzen.</p>
+        </div>
+
+        <div class="insight-card-inline">
+          <h4 class="insight-card-inline-title">Design-Systeme um Motion & Adaptivität erweitern</h4>
+          <p class="insight-card-inline-text">Siteseeing's Stärke in Design-Systemen ist die perfekte Basis für das, was Kunden zunehmend brauchen: Systeme, die Motion-Token, kontextadaptive Varianten und animierte Zustände von Anfang an einschließen – statt sie nachträglich hineinzuflicken.</p>
+          <p class="insight-massnahme-label">Sofortmaßnahme</p>
+          <p class="insight-massnahme">Ein bestehendes Kundenprojekt daraufhin prüfen, ob das Design-System Motion und Adaptivität abdeckt – bei Bedarf als konkretes Upgrade-Angebot formulieren.</p>
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <div class="section-divider"></div>
 
-  <!-- BRAND DESIGN -->
+  <!-- ── BRAND DESIGN ── -->
   <section class="section" id="brand-design">
     <div class="section-header">
       <span class="section-label">03</span>
       <h2 class="section-title">Brand Design</h2>
-      <span class="section-count">4 Trends</span>
+      <span class="section-count">4 Trends · 2 Insights</span>
     </div>
+
     <div class="trend-grid">
 
       <div class="trend-card">
@@ -752,10 +709,7 @@
         <h3 class="trend-titel">Adaptive Visual Identity & Kinetic Logos</h3>
         <p class="trend-kurzfassung">Logos und Identity-Systeme sind 2026 für Adaption gebaut – über Plattformen, Screens und Kontexte hinweg. Bewegung wird Teil der Markenidentität: Logos reagieren als Animation, Scroll-Reaktion oder kontextabhängige Transformation.</p>
         <div class="trend-card-footer">
-          <button class="expand-btn" onclick="toggle(this)">
-            Detailanalyse
-            <span class="expand-icon">▾</span>
-          </button>
+          <button class="expand-btn" onclick="toggle(this)">Detailanalyse <span class="expand-icon">▾</span></button>
           <div class="trend-detail">
             <p>Statische Logos gehören zur Vergangenheit: Adaptive Visual Identity bedeutet, dass das gleiche Markenzeichen als vollständige Wortmarke im Desktop-Header, als animiertes Icon in der App und als vereinfachtes Favicon im Browser konsistent und dennoch kontextgerecht erscheint. Kinetic Logos gehen einen Schritt weiter: Bewegung ist Teil der Markendefinition, nicht optionaler Zusatz. Formen wirken lebendig – soft-edged, fließend, reagierend. Flexible Color Systems ergänzen das System: Statt fixer Paletten nutzen Marken variable Farbthemen, die sich verschieben und entwickeln, während die Erkennbarkeit über Stimmung und Form erhalten bleibt. Diese Flexibilität ist keine Schwäche, sondern Stärke – Marken, die sich anpassen, ohne ihre Identität zu verlieren, sind 2026 die relevantesten.</p>
           </div>
@@ -770,10 +724,7 @@
         <h3 class="trend-titel">Humanisierung & Imperfect-by-Design-Ästhetik</h3>
         <p class="trend-kurzfassung">Als Gegenreaktion auf KI-generierte Perfektion setzen Marken auf menschliche Imperfektionen – roh, persönlich, ehrlich. Grain, Textur, Scans, Collage und handgemachte Ästhetik kehren als Differenzierungsmerkmal zurück.</p>
         <div class="trend-card-footer">
-          <button class="expand-btn" onclick="toggle(this)">
-            Detailanalyse
-            <span class="expand-icon">▾</span>
-          </button>
+          <button class="expand-btn" onclick="toggle(this)">Detailanalyse <span class="expand-icon">▾</span></button>
           <div class="trend-detail">
             <p>Canva proklamiert 2026 als Jahr der kreativen Rebellion gegen Algorithmus-Optimierung. Kreative werden unbekümmert gegenüber makelloser Perfektion und setzen bewusst auf das Menschliche – ungleichmäßige Linien, analoge Texturen, Zine-Kultur, Scrapbooking und DIY-Ästhetik. Childlike Anarchy in Branding beschreibt spielerische, naiv-expressive Formensprache als Gegenpol zur hyper-polierten KI-Ästhetik. Diese Bewegung ist strategisch fundiert: In einer Welt, in der AI beliebig viel perfekten Content produzieren kann, wird die sichtbare Handschrift des Menschen zum Vertrauenssignal. Purpose-Driven Branding verstärkt diesen Effekt – Authentizität, Purpose und Relatability sind die Differenzierungsmerkmale gegenüber generischen, AI-erzeugten Markenauftritten.</p>
           </div>
@@ -788,10 +739,7 @@
         <h3 class="trend-titel">Multisensorisches Branding & Emotionale Resonanz</h3>
         <p class="trend-kurzfassung">Emotional engagierte Konsumenten zeigen 306 % höheren Lifetime Value – emotionale Resonanz ist 2026 oberstes Ziel der Markenführung. Sound-Branding und haptische Identität etablieren sich als neue Disziplinen.</p>
         <div class="trend-card-footer">
-          <button class="expand-btn" onclick="toggle(this)">
-            Detailanalyse
-            <span class="expand-icon">▾</span>
-          </button>
+          <button class="expand-btn" onclick="toggle(this)">Detailanalyse <span class="expand-icon">▾</span></button>
           <div class="trend-detail">
             <p>Multisensorisches Branding erweitert die Markenidentität über den Bildschirm hinaus: Sonic Logos und Sound-Design werden zu essenziellen Markentouchpoints, die Wiedererkennung auch dann erzeugen, wenn der Nutzer nicht auf den Screen schaut – etwa beim Podcast-Hören oder bei Sprachassistenten. Haptic Feedback ergänzt das Erlebnis auf mobilen Geräten mit einer taktilen Schicht der Markeninteraktion. Die strategische Begründung ist stark: Emotional engagierte Konsumenten geben laut Studien 70 % mehr für bevorzugte Marken aus und zeigen einen 306 % höheren Lifetime Value. Texture als Markenidentität verbindet die digitale und physische Welt: Taktile Qualitäten in Verpackungen, Drucksachen und digitalen Oberflächen schaffen Tiefe und Persönlichkeit, die reinen Flat-Design-Ansätzen fehlt.</p>
           </div>
@@ -806,10 +754,7 @@
         <h3 class="trend-titel">AI Brand Governance & strategische Markenskalierung</h3>
         <p class="trend-kurzfassung">Beim Skalieren von Markeninhalten mit AI brauchen Unternehmen klare Governance-Strukturen. 2026 werden Marken belohnt, die Konsistenz-Checks, gesperrte Templates und automatisierte Regeln ins System einbauen.</p>
         <div class="trend-card-footer">
-          <button class="expand-btn" onclick="toggle(this)">
-            Detailanalyse
-            <span class="expand-icon">▾</span>
-          </button>
+          <button class="expand-btn" onclick="toggle(this)">Detailanalyse <span class="expand-icon">▾</span></button>
           <div class="trend-detail">
             <p>AI ermöglicht es, Markeninhalte in bisher unmöglicher Geschwindigkeit und Menge zu produzieren – doch ohne Governance entstehen inkonsistente, markenfremde Ergebnisse. Erfolgreiche Marken 2026 definieren klare Regelwerke: gesperrte Templates für kritische Anwendungsfälle, automatisierte Konsistenz-Checks für Farbe, Typografie und Tonalität sowie definierte Freigabeprozesse. Die Frage ist nicht mehr ob, sondern wie eine Marke AI einsetzt – AI-Agenten gestalten zunehmend die gesamte Customer Journey, und Marken müssen damit umgehen, dass AI Kaufentscheidungen mediiert. Adaptive und responsive Brand-Systeme, die für unterschiedliche Plattformen und Kontexte entwickelt wurden, sind die technische Voraussetzung dafür, dass AI-gestützte Skalierung ohne Identitätsverlust gelingt.</p>
           </div>
@@ -817,70 +762,34 @@
       </div>
 
     </div>
+
+    <!-- Brand Insights -->
+    <div class="section-insights">
+      <div class="section-insights-header">
+        <span class="section-insights-label">Für Siteseeing</span>
+        <span class="section-insights-title">Was bedeuten diese Trends konkret?</span>
+      </div>
+      <div class="insight-cards-row">
+
+        <div class="insight-card-inline">
+          <h4 class="insight-card-inline-title">Menschlichkeit als Positionierungsstärke nutzen</h4>
+          <p class="insight-card-inline-text">Der Trend zu Imperfect-by-Design spielt direkt in Siteseeing's Kernkompetenz: analytisch, nutzerzentriert, authentisch. In einer Welt voller AI-generierter Perfektion wird die menschliche Handschrift zum Vertrauenssignal – und Siteseeing hat diese Handschrift. Das kann aktiv in die eigene Markenkommunikation eingebaut werden.</p>
+          <p class="insight-massnahme-label">Sofortmaßnahme</p>
+          <p class="insight-massnahme">Einen Standpunkt-Text verfassen: „Was wir von AI lernen – und wo wir bewusst menschlich bleiben." Mit konkreten Projektbeispielen für Website oder LinkedIn.</p>
+        </div>
+
+        <div class="insight-card-inline">
+          <h4 class="insight-card-inline-title">AI-ready Brand Guidelines als neues Deliverable</h4>
+          <p class="insight-card-inline-text">Kunden wie Leica Camera und Hamburger Hochbahn skalieren ihre Markenkommunikation zunehmend mit AI und brauchen dafür Governance-Strukturen. Siteseeing kann Brand Guidelines einführen, die nicht nur beschreiben wie die Marke aussieht, sondern auch wie AI die Marke korrekt anwenden darf.</p>
+          <p class="insight-massnahme-label">Sofortmaßnahme</p>
+          <p class="insight-massnahme">In laufenden Brand-Projekten einen „AI-Einsatz"-Abschnitt in die Guidelines integrieren: Dos & Don'ts für KI-generierte Inhalte, gesperrte Elemente, Freigabeprozesse.</p>
+        </div>
+
+      </div>
+    </div>
   </section>
 
 </main>
-
-<!-- INSIGHTS -->
-<div class="insights-wrap" id="siteseeing">
-  <div class="insights-inner">
-    <span class="insights-tag">Für Siteseeing · 6 Handlungsempfehlungen</span>
-    <h2 class="insights-title">Was bedeutet das konkret?</h2>
-    <p class="insights-subtitle">Abgeleitet aus den analysierten Trends – mit direktem Bezug zu Siteseeing's Stärken, Kunden und nächsten Schritten.</p>
-
-    <div class="insights-grid">
-
-      <div class="insight-card">
-        <span class="insight-number">01 — Workflow</span>
-        <h3 class="insight-titel">AI in den UX-Prozess integrieren – jetzt</h3>
-        <p class="insight-begruendung">93 % der Designer setzen AI-Tools bereits ein. Figma AI und UX Pilot AI können Discovery & Research nachweislich beschleunigen und Research-Ergebnisse schneller in Prototypen überführen. Wer jetzt eine eigene Praxis entwickelt, hat in 12 Monaten einen echten Kompetenzvorsprung.</p>
-        <p class="insight-massnahme-label">Sofortmaßnahme</p>
-        <p class="insight-massnahme">In einem laufenden Projekt Figma AI gezielt für einen Arbeitsschritt einsetzen (z.B. Wireframe-Generierung aus Research-Clustern) und Erfahrungen intern dokumentieren.</p>
-      </div>
-
-      <div class="insight-card">
-        <span class="insight-number">02 — Leistungen</span>
-        <h3 class="insight-titel">Design-Systeme um Motion & Adaptivität erweitern</h3>
-        <p class="insight-begruendung">Siteseeing's Stärke in Design-Systemen ist die perfekte Basis für Adaptive Identity-Systeme. Kinetic Logos und flexible Farbsysteme werden von modernen Marken erwartet – besonders relevant für Kunden wie Leica Camera oder Hamburger Hochbahn.</p>
-        <p class="insight-massnahme-label">Sofortmaßnahme</p>
-        <p class="insight-massnahme">Ein bestehendes Kundenprojekt prüfen, ob das Design-System Motion-Token und kontextadaptive Varianten unterstützt – bei Bedarf als Upgrade-Angebot formulieren.</p>
-      </div>
-
-      <div class="insight-card">
-        <span class="insight-number">03 — Positionierung</span>
-        <h3 class="insight-titel">Performance als Designargument im Kundengespräch</h3>
-        <p class="insight-begruendung">100 ms Ladezeit-Verzögerung = 7 % Conversion-Verlust. Für Kunden wie etracker und H2 Mobility ist das ein handfestes Businessargument. Performance und UX gemeinsam zu kommunizieren stärkt Siteseeing's Position als strategischer Partner.</p>
-        <p class="insight-massnahme-label">Sofortmaßnahme</p>
-        <p class="insight-massnahme">Einen kostenlosen Performance-Schnell-Check für einen Bestandskunden durchführen (z.B. Lighthouse) und Ergebnisse als Grundlage für ein Optimierungsgespräch nutzen.</p>
-      </div>
-
-      <div class="insight-card">
-        <span class="insight-number">04 — Markenkommunikation</span>
-        <h3 class="insight-titel">Menschlichkeit als Positionierungsstärke nutzen</h3>
-        <p class="insight-begruendung">Der Trend zu Imperfect-by-Design spielt direkt in Siteseeing's Kernkompetenz: analytisch, nutzerzentriert, authentisch. In einer Welt voller AI-generierter Perfektion wird die menschliche Handschrift zum Differenzierungsmerkmal.</p>
-        <p class="insight-massnahme-label">Sofortmaßnahme</p>
-        <p class="insight-massnahme">Einen Standpunkt-Text verfassen: „Was wir von AI lernen – und wo wir bewusst menschlich bleiben." Mit konkreten Projektbeispielen für Website oder LinkedIn.</p>
-      </div>
-
-      <div class="insight-card">
-        <span class="insight-number">05 — Deliverables</span>
-        <h3 class="insight-titel">AI-ready Brand Guidelines als neues Deliverable</h3>
-        <p class="insight-begruendung">Kunden wie Leica Camera und Hamburger Hochbahn skalieren ihre Markenkommunikation zunehmend mit AI. Siteseeing kann Brand Guidelines einführen, die auch definieren, wie AI die Marke korrekt anwenden darf.</p>
-        <p class="insight-massnahme-label">Sofortmaßnahme</p>
-        <p class="insight-massnahme">In laufenden Brand-Projekten einen „AI-Einsatz"-Abschnitt in die Guidelines integrieren: Dos & Don'ts für KI-generierte Inhalte, gesperrte Elemente, Freigabeprozesse.</p>
-      </div>
-
-      <div class="insight-card">
-        <span class="insight-number">06 — Qualitätsstandard</span>
-        <h3 class="insight-titel">Accessibility aktiv als Qualitätsmerkmal vermarkten</h3>
-        <p class="insight-begruendung">1 von 5 Menschen erlebt digitale Produkte anders. Siteseeing's analytische Herangehensweise ist der ideale Ausgangspunkt, Accessibility nicht als Compliance-Thema, sondern als strategisches Qualitätsmerkmal zu positionieren.</p>
-        <p class="insight-massnahme-label">Sofortmaßnahme</p>
-        <p class="insight-massnahme">Accessibility-Audit für ein Referenzprojekt durchführen (axe DevTools oder WAVE). Ergebnisse und Lernpunkte als Case Study oder LinkedIn-Post teilen.</p>
-      </div>
-
-    </div>
-  </div>
-</div>
 
 <!-- FOOTER -->
 <footer>
@@ -902,28 +811,18 @@
     icon.classList.toggle('open', !isOpen);
   }
 
-  // Active nav on scroll
-  const sections = [
-    { id: 'ux-ui', idx: 0 },
-    { id: 'webdesign', idx: 1 },
-    { id: 'brand-design', idx: 2 },
-    { id: 'siteseeing', idx: 3 }
-  ];
-
+  const sections = ['ux-ui', 'webdesign', 'brand-design'];
   const tabs = document.querySelectorAll('.nav-tab');
 
-  function updateNav() {
+  window.addEventListener('scroll', () => {
     let active = 0;
-    sections.forEach(({ id, idx }) => {
+    sections.forEach((id, idx) => {
       const el = document.getElementById(id);
       if (el && el.getBoundingClientRect().top <= 80) active = idx;
     });
     tabs.forEach((t, i) => t.classList.toggle('active', i === active));
-  }
+  }, { passive: true });
 
-  window.addEventListener('scroll', updateNav, { passive: true });
-
-  // Smooth scroll with offset
   tabs.forEach(tab => {
     tab.addEventListener('click', e => {
       e.preventDefault();
