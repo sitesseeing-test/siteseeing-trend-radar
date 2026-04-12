@@ -378,6 +378,15 @@
       noResults.style.display = visible === 0 ? 'block' : 'none';
     });
   });
+
+  // Entire card clickable
+  cards.forEach(card => {
+    card.addEventListener('click', e => {
+      if (!e.target.closest('.card-btn')) {
+        card.querySelector('.card-btn').click();
+      }
+    });
+  });
 </script>
 </body>
 </html>
