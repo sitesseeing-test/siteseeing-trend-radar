@@ -223,157 +223,125 @@ body {
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 16px;
 }
 
 /* ─────────────────────────────────────────
-   TREND CARD
+   TREND CARD  (Apple style)
 ───────────────────────────────────────── */
 .trend-card {
-  background: var(--surface);
-  padding: 24px 24px 0;
+  background: #ffffff;
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  border-radius: 14px;
-  border: 1px solid var(--border);
-  transition: box-shadow 0.25s, border-color 0.25s, transform 0.25s;
+  transition: transform 0.28s cubic-bezier(.25,.46,.45,.94),
+              box-shadow 0.28s cubic-bezier(.25,.46,.45,.94);
+  cursor: pointer;
 }
 .trend-card:hover {
-  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-  border-color: var(--border2);
-  transform: translateY(-2px);
+  transform: scale(1.015);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.1);
 }
 .trend-card.card-hidden { display: none; }
 
-/* Category label */
+.card-content {
+  padding: 22px 22px 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+.card-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.card-dot--hoch  { background: #E94F4E; }
+.card-dot--mittel { background: #c8c8c8; }
 .card-category {
-  display: inline-block;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--text-4);
-  margin-bottom: 10px;
-}
-
-/* Badges */
-.card-badges {
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-  margin-bottom: 14px;
-}
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 10px;
-  font-weight: 600;
-  padding: 3px 8px;
-  border-radius: 5px;
-  letter-spacing: 0.02em;
-  font-family: inherit;
-}
-.badge-dot {
-  display: inline-block;
-  width: 11px;
-  height: 11px;
-  flex-shrink: 0;
-  border-radius: 0;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.badge-hoch { background: var(--red); color: #fff; }
-.badge-hoch .badge-dot {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"><path d="M6 1L1 8h4l-1 5 5-7H5z" fill="white" fill-opacity=".8"/></svg>');
-}
-.badge-mittel {
-  background: #f0f0f0;
-  color: #777;
-  border: 1px solid #e0e0e0;
-}
-.badge-mittel .badge-dot {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><rect x="1" y="2.5" width="8" height="1.5" rx=".75" fill="%23888"/><rect x="1" y="6" width="5" height="1.5" rx=".75" fill="%23888"/></svg>');
-}
-.badge-niedrig { background: #f0f0f0; color: #aaa; }
-.badge-zeit {
-  background: transparent;
-  color: var(--text-3);
-  border: 1px solid var(--border);
+  font-size: 11px;
   font-weight: 500;
-}
-
-/* Card content */
-.card-title {
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--text-1);
-  margin-bottom: 10px;
-  line-height: 1.35;
-}
-.card-summary {
-  font-size: 13px;
-  color: var(--text-3);
-  line-height: 1.7;
-  flex-grow: 1;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
+  color: #999;
+  flex: 1;
+  white-space: nowrap;
   overflow: hidden;
-}
-
-/* Card footer */
-.card-footer {
-  margin-top: 18px;
-  padding: 12px 24px 15px;
-  border-top: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin-left: -24px;
-  margin-right: -24px;
-  border-radius: 0 0 14px 14px;
-}
-.card-footer-meta { font-size: 11px; color: var(--text-4); }
-.card-footer-right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
+  text-overflow: ellipsis;
 }
 .card-date {
   font-size: 11px;
-  color: var(--text-4);
-  font-style: normal;
+  color: #c8c8c8;
   white-space: nowrap;
+  font-style: normal;
 }
-.card-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--red);
-  text-decoration: none;
-  letter-spacing: 0.01em;
-  transition: gap 0.18s;
-}
-.card-link:hover { gap: 9px; }
-.card-link-arrow { font-size: 12px; }
-.card-has-insight {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
+.card-insight-mark {
   font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  color: var(--red);
-  opacity: 0.5;
+  color: #E94F4E;
+  opacity: 0.6;
+  font-weight: 700;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #111;
+  margin-bottom: 8px;
+  line-height: 1.25;
+}
+.card-summary {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  flex: 1;
+}
+
+.card-visual {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.card-visual img {
+  width: 100%;
+  height: 164px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s cubic-bezier(.25,.46,.45,.94);
+}
+.trend-card:hover .card-visual img {
+  transform: scale(1.04);
+}
+.card-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  background: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 1;
+  transition: background 0.18s, transform 0.18s;
+  z-index: 1;
+}
+.card-btn:hover {
+  background: #333;
+  transform: scale(1.1);
 }
 
 /* No-results */
@@ -381,9 +349,14 @@ body {
   text-align: center;
   padding: 64px 0;
   font-size: 13px;
-  color: var(--text-4);
+  color: #c8c8c8;
   grid-column: 1 / -1;
 }
+
+/* Legacy classes kept for compat (hidden) */
+.card-badges, .card-footer, .card-footer-right,
+.card-footer-meta, .card-link, .card-link-arrow,
+.card-has-insight, .badge { display: none; }
 
 /* ─────────────────────────────────────────
    FOOTER
@@ -630,6 +603,7 @@ footer {
 ───────────────────────────────────────── */
 @media (max-width: 960px) {
   .cards-grid { grid-template-columns: repeat(2, 1fr); }
+
   .header-inner { grid-template-columns: 1fr; }
   .header-stats {
     grid-column: 1;
