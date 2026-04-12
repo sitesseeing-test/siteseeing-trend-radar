@@ -183,6 +183,14 @@ body {
   color: var(--gray-300);
 }
 
+.section-intro {
+  font-size: 15px;
+  color: var(--gray-400);
+  line-height: 1.65;
+  margin: -8px 0 24px;
+  max-width: 640px;
+}
+
 /* ── CARDS GRID ── */
 .cards-grid {
   display: grid;
