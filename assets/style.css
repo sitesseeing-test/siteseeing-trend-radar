@@ -191,6 +191,23 @@ body {
   max-width: 640px;
 }
 
+/* ── NAV COUNT ── */
+.nav-count {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--gray-300);
+  background: var(--gray-100);
+  padding: 1px 5px;
+  border-radius: 10px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+.nav-tab.active .nav-count {
+  color: var(--gray-500);
+  background: var(--gray-200);
+}
+
 /* ── CARDS GRID ── */
 .cards-grid {
   display: grid;
@@ -206,12 +223,26 @@ body {
   flex-direction: column;
   border-radius: 12px;
   border: 1px solid var(--gray-200);
-  transition: background 0.15s, box-shadow 0.2s, transform 0.2s;
+  transition: background 0.15s, box-shadow 0.2s, transform 0.2s, opacity 0.2s;
 }
 .trend-card:hover {
   background: var(--gray-50);
   box-shadow: 0 8px 24px rgba(0,0,0,0.07);
   transform: translateY(-2px);
+}
+.trend-card.card-hidden {
+  display: none;
+}
+
+/* ── CARD CATEGORY ── */
+.card-category {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  margin-bottom: 6px;
 }
 
 .card-badges {
@@ -261,11 +292,12 @@ body {
 }
 .card-footer {
   margin-top: 20px;
-  padding: 14px 24px 18px;
+  padding: 12px 24px 16px;
   border-top: 1px solid var(--gray-200);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
   margin-left: -24px;
   margin-right: -24px;
   border-radius: 0 0 12px 12px;
@@ -273,6 +305,27 @@ body {
 .card-footer-meta {
   font-size: 11px;
   color: var(--gray-300);
+}
+.card-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+.card-date {
+  font-size: 11px;
+  color: var(--gray-300);
+  font-style: normal;
+  white-space: nowrap;
+}
+
+/* ── NO RESULTS ── */
+.no-results {
+  text-align: center;
+  padding: 64px 0;
+  font-size: 14px;
+  color: var(--gray-300);
+  grid-column: 1 / -1;
 }
 .card-link {
   display: inline-flex;
@@ -400,6 +453,13 @@ footer {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+}
+.detail-date {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-top: 14px;
+  font-style: normal;
 }
 
 .detail-body {
