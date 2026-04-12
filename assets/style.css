@@ -262,11 +262,27 @@ body {
   letter-spacing: 0.01em;
   font-family: inherit;
 }
-.badge-dot { width: 5px; height: 5px; border-radius: 50%; }
+.badge-dot {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 .badge-hoch { background: var(--red); color: var(--white); }
-.badge-hoch .badge-dot { background: rgba(255,255,255,0.55); }
+.badge-hoch .badge-dot {
+  /* Lightning bolt – Hoch */
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 14"><path d="M6 1L1 8h4l-1 5 5-7H5z" fill="white" fill-opacity=".75"/></svg>');
+}
 .badge-mittel { background: var(--gray-900); color: var(--white); }
-.badge-mittel .badge-dot { background: rgba(255,255,255,0.35); }
+.badge-mittel .badge-dot {
+  /* Two horizontal bars – Mittel */
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><rect x="1" y="2.5" width="8" height="1.5" rx=".75" fill="white" fill-opacity=".5"/><rect x="1" y="6" width="5" height="1.5" rx=".75" fill="white" fill-opacity=".5"/></svg>');
+}
 .badge-niedrig { background: var(--gray-200); color: var(--gray-500); }
 .badge-zeit { background: var(--gray-100); color: var(--gray-700); font-weight: 500; }
 
