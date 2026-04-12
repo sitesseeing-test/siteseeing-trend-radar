@@ -222,8 +222,8 @@ body {
 ───────────────────────────────────────── */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 26px;
 }
 
 /* ─────────────────────────────────────────
@@ -602,7 +602,7 @@ footer {
    RESPONSIVE
 ───────────────────────────────────────── */
 @media (max-width: 960px) {
-  .cards-grid { grid-template-columns: repeat(2, 1fr); }
+  .cards-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
 
   .header-inner { grid-template-columns: 1fr; }
   .header-stats {
