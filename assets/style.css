@@ -105,6 +105,15 @@ body {
 .header-logo { display: none; }
 .header-logo-name, .header-logo-dot, .header-logo-sub { display: none; }
 
+.stat--countdown .stat-number {
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  color: #888;
+}
+.stat--countdown .stat-label {
+  color: #333;
+}
+
 /* ─────────────────────────────────────────
    NAV / FILTER
 ───────────────────────────────────────── */

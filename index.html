@@ -36,6 +36,10 @@
         <span class="stat-number">9</span>
         <span class="stat-label">Insights</span>
       </div>
+      <div class="stat stat--countdown">
+        <span class="stat-number" id="countdown-display">–</span>
+        <span class="stat-label">Nächstes Update</span>
+      </div>
     </div>
     <p class="header-intro">Aktuelle Trends in UX/UI, Webdesign und Brand Design – mit Handlungsempfehlungen für das Siteseeing-Team.</p>
   </div>
@@ -387,6 +391,27 @@
       }
     });
   });
+
+  // Countdown to next Friday 9:00 AM (CET/CEST)
+  function nextFriday9() {
+    const now = new Date();
+    const target = new Date(now);
+    let d = (5 - now.getDay() + 7) % 7;
+    if (d === 0 && now.getHours() >= 9) d = 7;
+    target.setDate(now.getDate() + d);
+    target.setHours(9, 0, 0, 0);
+    return target;
+  }
+  function updateCountdown() {
+    const diff = nextFriday9() - new Date();
+    const days  = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins  = Math.floor((diff % 3600000)  / 60000);
+    const el = document.getElementById('countdown-display');
+    if (el) el.textContent = days + 'T ' + hours + 'h ' + String(mins).padStart(2,'0') + 'm';
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 30000);
 </script>
 </body>
 </html>
