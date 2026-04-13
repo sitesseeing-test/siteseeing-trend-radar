@@ -393,6 +393,11 @@ footer {
    DETAIL PAGE
 ═══════════════════════════════════════ */
 
+/* White background on detail pages only */
+body:has(.detail-header) {
+  background: #ffffff;
+}
+
 .detail-header {
   background: #111111;
   padding: 36px 48px 48px;
