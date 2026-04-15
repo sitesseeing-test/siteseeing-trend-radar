@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var nav = document.querySelector('.detail-nav');
-  if (!nav) return;
+  var sources = document.querySelector('.detail-sources');
+  if (!sources) return;
 
   var btn = document.createElement('a');
   btn.className = 'claude-cta';
@@ -17,5 +17,5 @@ document.addEventListener('DOMContentLoaded', function () {
     window.open('https://claude.ai/new?q=' + encodeURIComponent(prompt), '_blank');
   });
 
-  nav.insertAdjacentElement('beforebegin', btn);
+  sources.insertAdjacentElement('beforebegin', btn);
 });
