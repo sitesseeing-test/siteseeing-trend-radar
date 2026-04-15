@@ -630,6 +630,7 @@ body:has(.detail-header) {
   flex-shrink: 0;
 }
 .claude-cta:hover { background: var(--bg); }
+.claude-cta + .detail-sources { margin-top: 0; }
 
 /* Prev / Next nav */
 .detail-nav {
