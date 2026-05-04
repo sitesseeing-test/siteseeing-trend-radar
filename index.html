@@ -451,13 +451,14 @@
     const days  = Math.floor(diff / 86400000);
     const hours = Math.floor((diff % 86400000) / 3600000);
     const mins  = Math.floor((diff % 3600000)  / 60000);
-    const text = days + 'T ' + hours + 'h ' + String(mins).padStart(2,'0') + 'm';
+    const secs  = Math.floor((diff % 60000)    / 1000);
+    const text = days + 'T ' + String(hours).padStart(2,'0') + ':' + String(mins).padStart(2,'0') + ':' + String(secs).padStart(2,'0');
     document.querySelectorAll('.header-about-countdown').forEach(el => {
       el.textContent = text;
     });
   }
   updateCountdown();
-  setInterval(updateCountdown, 30000);
+  setInterval(updateCountdown, 1000);
 </script>
 </body>
 </html>
