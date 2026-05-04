@@ -24,9 +24,7 @@
 
 <header class="header">
   <div class="header-inner">
-    <a href="index.html" class="header-logo-link">
-      <img src="assets/siteseeing-logo.svg" alt="Siteseeing" class="header-logo">
-    </a>
+    <p class="header-tag" id="header-tag">Trend Radar</p>
     <h1>Was bewegt<br>Design heute.</h1>
   </div>
   <div class="header-about">
@@ -437,6 +435,15 @@
   });
 
   // Countdown to next Friday 9:00 AM
+  // Dynamic header tag: "Trend Radar – Monat Jahr"
+  (function() {
+    const now = new Date();
+    const month = now.toLocaleDateString('de-DE', { month: 'long' });
+    const year  = now.getFullYear();
+    const el = document.getElementById('header-tag');
+    if (el) el.textContent = 'Trend Radar – ' + month + ' ' + year;
+  })();
+
   function nextFriday9() {
     const now = new Date();
     const target = new Date(now);

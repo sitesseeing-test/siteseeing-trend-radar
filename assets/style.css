@@ -120,17 +120,8 @@ body {
   color: var(--text-1);
   max-width: 800px;
 }
-.header-logo-link {
-  display: inline-block;
-  margin-bottom: 20px;
-  text-decoration: none;
-}
-.header-logo {
-  height: 28px;   /* natural SVG height = 28px, matches Figma */
-  width: auto;
-  display: block;
-}
-.header-tag { display: none; }
+.header-logo-link { display: none; }
+.header-logo      { display: none; }
 .header-stats { display: none; }
 .header-intro { display: none; }
 
