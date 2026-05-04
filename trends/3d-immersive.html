@@ -3,24 +3,35 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>3D, Taktiles Design & Immersive Experiences – Siteseeing Trend Radar</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
+
+<nav class="site-navbar">
+  <a href="../index.html" class="navbar-logo">
+    <span class="navbar-logo-name">Siteseeing</span>
+    <span class="navbar-logo-sep">·</span>
+    <span class="navbar-logo-sub">Trend Radar</span>
+  </a>
+  <div class="navbar-right">
+    <span class="navbar-update-label">Nächstes Update</span>
+    <span class="navbar-countdown">–</span>
+  </div>
+</nav>
+
 <header class="detail-header">
   <div class="detail-header-inner">
-    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
     <span class="detail-section-tag">Webdesign</span>
     <h1 class="detail-title">3D, Taktiles Design & Immersive Experiences</h1>
-    <div class="detail-badges">
-      <span class="badge badge-mittel"><span class="badge-dot"></span>Impact: Mittel</span>
-      <span class="badge badge-zeit">In 6–12 Monaten relevant</span>
-    </div>
-  <time class="detail-date">2. April 2026</time>
   </div>
 </header>
 <div class="detail-body">
+  <div class="detail-top-nav">
+    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
+    <time class="detail-date">2. April 2026</time>
+  </div>
+
   <p class="detail-lead">Bewegung weg von statischen Bildern hin zu immersiven 3D-Erlebnissen – WebGL mit interaktiven Modellen, Scroll-getriggerten Animationen und AR-Previews. Volumetrisches und taktiles Design macht UI greifbarer.</p>
 
 <p class="detail-analysis-label">Detailanalyse</p>
@@ -55,6 +66,13 @@
   </nav>
 </div>
 <footer><div class="footer-inner"><p class="footer-text"><strong>Siteseeing Trend Radar · April 2026</strong></p><span class="footer-badge">Erstellt mit <span>Claude Code</span></span></div></footer>
+<script>
+(function(){
+  function nextFriday9(){var n=new Date(),t=new Date(n),d=(5-n.getDay()+7)%7;if(d===0&&n.getHours()>=9)d=7;t.setDate(n.getDate()+d);t.setHours(9,0,0,0);return t;}
+  function update(){var diff=nextFriday9()-new Date(),days=Math.floor(diff/86400000),hours=Math.floor((diff%86400000)/3600000),mins=Math.floor((diff%3600000)/60000);var txt=days+'T '+hours+'h '+String(mins).padStart(2,'0')+'m';document.querySelectorAll('.navbar-countdown').forEach(function(el){el.textContent=txt;});}
+  update();setInterval(update,30000);
+})();
+</script>
 <script src="../assets/main.js"></script>
 </body>
 </html>
