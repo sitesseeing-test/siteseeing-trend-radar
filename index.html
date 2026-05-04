@@ -20,10 +20,6 @@
   <a href="index.html" class="navbar-logo">
     <img src="assets/siteseeing-logo-white.svg" alt="Siteseeing" class="navbar-logo-img">
   </a>
-  <div class="navbar-right">
-    <span class="navbar-update-label">Nächstes Update</span>
-    <span class="navbar-countdown" id="countdown-display">–</span>
-  </div>
 </nav>
 
 <header class="header">
@@ -34,7 +30,7 @@
     <h1>Was bewegt<br>Design heute.</h1>
   </div>
   <div class="header-about">
-    <p class="header-about-text">Jeden Freitag recherchiert Claude die neuesten Trends in UX, Webdesign und Brand Design, fasst sie zusammen und veröffentlicht sie mit einer konkreten Handlungsempfehlung für das Siteseeing-Team. Dieser Radar wurde vollständig mit Claude Code erstellt.</p>
+    <p class="header-about-text">Jeden Freitag recherchiert Claude die neuesten Trends in UX, Webdesign und Brand Design, fasst sie zusammen und veröffentlicht sie mit einer konkreten Handlungsempfehlung für das Siteseeing-Team. Dieser Radar wurde vollständig mit Claude Code erstellt. Nächstes Update in <span class="header-about-countdown">–</span></p>
   </div>
 </header>
 
@@ -456,7 +452,7 @@
     const hours = Math.floor((diff % 86400000) / 3600000);
     const mins  = Math.floor((diff % 3600000)  / 60000);
     const text = days + 'T ' + hours + 'h ' + String(mins).padStart(2,'0') + 'm';
-    document.querySelectorAll('#countdown-display, .navbar-countdown').forEach(el => {
+    document.querySelectorAll('.header-about-countdown').forEach(el => {
       el.textContent = text;
     });
   }
