@@ -108,17 +108,17 @@ body {
 ───────────────────────────────────────── */
 .header {
   background: var(--bg);
-  padding: 148px 0 0;
+  padding-top: 180px;
 }
 .header-inner {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 40px 120px 0;
+  padding: 0 120px;
 }
 .header-tag {
   display: block;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 600;
   color: var(--text-2);
   margin-bottom: 16px;
   letter-spacing: 0;
@@ -138,17 +138,19 @@ body {
 /* About / description section */
 .header-about {
   background: var(--bg);
-}
-.header-about-inner {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 40px 120px 48px;
+  padding: 60px 120px 30px;
 }
-.header-about-text {
-  font-size: 18px;
+.header-about-inner {
+  /* compat wrapper – no longer used */
+}
+.header-about-text,
+.header-about p {
+  font-size: 24px;
   font-weight: 500;
   color: var(--text-1);
-  line-height: 1.65;
+  line-height: 1.46;
   max-width: 800px;
 }
 
@@ -165,7 +167,7 @@ body {
 .nav-inner {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 120px 32px;
+  padding: 48px 120px 32px;
   display: flex;
   gap: 16px;
   overflow-x: auto;
@@ -330,8 +332,7 @@ body {
 .card-btn {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  font-size: 15px;
+  font-size: 0; /* hide the raw HTML arrow */
   font-weight: 500;
   color: var(--text-1);
   text-decoration: none;
@@ -343,15 +344,12 @@ body {
   padding: 0;
   transition: color 0.15s;
 }
-.card-btn::after {
-  content: ' →';
-}
-.card-btn:hover { color: var(--accent); background: none; transform: none; }
-
-/* Fake "Mehr erfahren" label before arrow (CSS only) */
 .card-btn::before {
-  content: 'Mehr erfahren';
+  content: 'Mehr erfahren →';
+  font-size: 15px;
 }
+.card-btn::after { content: none; }
+.card-btn:hover { color: var(--accent); background: none; transform: none; }
 
 /* Legacy hidden */
 .card-badges, .card-footer, .card-footer-right,
@@ -712,7 +710,7 @@ body:has(.detail-header) {
 ───────────────────────────────────────── */
 @media (max-width: 1300px) {
   .header-inner,
-  .header-about-inner,
+  .header-about,
   .nav-inner,
   .main { padding-left: 48px; padding-right: 48px; }
   .detail-header { padding-left: 48px; padding-right: 48px; }
@@ -729,13 +727,18 @@ body:has(.detail-header) {
 
   .header        { padding-top: 86px; }
   .header-inner,
-  .header-about-inner,
+  .header-about,
   .nav-inner,
   .main          { padding-left: 20px; padding-right: 20px; }
+  .header-about  { padding-top: 32px; padding-bottom: 16px; }
+  .header-about-text,
+  .header-about p { font-size: 18px; line-height: 1.55; }
   .nav-outer     { top: 66px; }
+  .nav-inner     { padding-top: 24px; }
   .nav-tab       { font-size: 15px; padding: 0 16px; height: 36px; }
 
   .header h1     { font-size: 36px; }
+  .header-tag    { font-size: 15px; }
 
   .detail-header { padding: 86px 20px 32px; }
   .detail-body   { padding: 0 20px 64px; }
