@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
+  var categoryColors = {
+    'UX / UI Design': '#E94F4E',
+    'Webdesign':      '#9182DB',
+    'Brand Design':   '#2D9C8A',
+  };
+  var tag = document.querySelector('.detail-section-tag');
+  if (tag && categoryColors[tag.textContent.trim()]) {
+    tag.style.background = categoryColors[tag.textContent.trim()];
+  }
+
   var sources = document.querySelector('.detail-sources');
   if (!sources) return;
 
