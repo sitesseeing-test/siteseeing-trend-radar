@@ -4,9 +4,19 @@ document.addEventListener('DOMContentLoaded', function () {
     'Webdesign':      '#9182DB',
     'Brand Design':   '#2D9C8A',
   };
+  var insightColors = {
+    'UX / UI Design': '#FFF1F0',
+    'Webdesign':      '#ACDCD4',
+    'Brand Design':   '#B8C0F3',
+  };
   var tag = document.querySelector('.detail-section-tag');
-  if (tag && categoryColors[tag.textContent.trim()]) {
-    tag.style.background = categoryColors[tag.textContent.trim()];
+  var category = tag ? tag.textContent.trim() : '';
+  if (tag && categoryColors[category]) {
+    tag.style.background = categoryColors[category];
+  }
+  var insight = document.querySelector('.detail-insight');
+  if (insight && insightColors[category]) {
+    insight.style.background = insightColors[category];
   }
 
   var sources = document.querySelector('.detail-sources');
