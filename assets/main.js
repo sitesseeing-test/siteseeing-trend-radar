@@ -19,6 +19,44 @@ document.addEventListener('DOMContentLoaded', function () {
     insight.style.background = insightColors[category];
   }
 
+  // Nav dots: colored circle before each linked article title
+  var navCategoryColors = {
+    'figma-april-update':               '#E94F4E',
+    'container-queries-breakpoint-free':'#9182DB',
+    'claude-design':                    '#E94F4E',
+    'adobe-cx-enterprise':              '#2D9C8A',
+    'canva-ai-2':                       '#E94F4E',
+    'dopamine-design':                  '#9182DB',
+    'ux-ki-orchestrator':               '#E94F4E',
+    'synthetische-nutzerforschung':     '#E94F4E',
+    'vibe-design':                      '#E94F4E',
+    'ux-jobmarkt':                      '#E94F4E',
+    'design-demokratisierung':          '#E94F4E',
+    'ux-ai-kollaborator':               '#E94F4E',
+    'generative-ui':                    '#E94F4E',
+    'liquid-glass-ui':                  '#E94F4E',
+    'accessibility':                    '#E94F4E',
+    'performance-first':                '#9182DB',
+    'expressive-typography':            '#9182DB',
+    'ai-personalization':               '#9182DB',
+    '3d-immersive':                     '#9182DB',
+    'adaptive-identity':                '#2D9C8A',
+    'humanisierung':                    '#2D9C8A',
+    'multisensorisches-branding':       '#2D9C8A',
+    'ai-brand-governance':              '#2D9C8A',
+  };
+  document.querySelectorAll('.detail-nav-item').forEach(function(link) {
+    var href = link.getAttribute('href') || '';
+    var slug = href.replace(/.*\//, '').replace(/\.html.*/, '');
+    var color = navCategoryColors[slug];
+    if (!color) return;
+    var dot = document.createElement('span');
+    dot.className = 'nav-cat-dot';
+    dot.style.background = color;
+    var titleEl = link.querySelector('.detail-nav-title');
+    if (titleEl) titleEl.insertBefore(dot, titleEl.firstChild);
+  });
+
   var sources = document.querySelector('.detail-sources');
   if (!sources) return;
 

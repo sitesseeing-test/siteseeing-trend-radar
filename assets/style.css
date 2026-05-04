@@ -691,6 +691,17 @@ body:has(.detail-header) {
 }
 .detail-nav-item:hover { background: var(--border); }
 .detail-nav-item.next { text-align: right; }
+.nav-cat-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 8px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
 .detail-nav-dir {
   font-size: 13px;
   font-weight: 500;
