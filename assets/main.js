@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
   };
   var insightColors = {
     'UX / UI Design': '#FFF1F0',
-    'Webdesign':      '#B8C0F3',
-    'Brand Design':   '#ACDCD4',
+    'Webdesign':      '#F5F6FE',
+    'Brand Design':   '#EDF8F6',
   };
   var tag = document.querySelector('.detail-section-tag');
   var category = tag ? tag.textContent.trim() : '';
