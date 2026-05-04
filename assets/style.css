@@ -197,7 +197,8 @@ body {
   background: var(--dark);
   color: #fff;
 }
-.nav-count::before { content: ' ('; }
+.nav-count { margin-left: 4px; }
+.nav-count::before { content: '('; }
 .nav-count::after  { content: ')'; }
 
 /* ─────────────────────────────────────────
