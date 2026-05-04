@@ -406,11 +406,13 @@ body:has(.detail-header) {
 /* Detail header – light background */
 .detail-header {
   background: var(--bg);
-  padding: 148px 120px 48px;
+  padding-top: 148px;
+  padding-bottom: 48px;
 }
 .detail-header-inner {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 120px;
 }
 
 /* Back link (now inside body via detail-top-nav) */
@@ -712,8 +714,8 @@ body:has(.detail-header) {
   .header-about,
   .nav-inner,
   .main { padding-left: 48px; padding-right: 48px; }
-  .detail-header { padding-left: 48px; padding-right: 48px; }
-  .detail-body   { padding-left: 48px; padding-right: 48px; }
+  .detail-header-inner { padding-left: 48px; padding-right: 48px; }
+  .detail-body         { padding-left: 48px; padding-right: 48px; }
   footer         { padding-left: 48px; padding-right: 48px; }
   .cards-grid    { grid-template-columns: repeat(2, 1fr); }
 }
@@ -739,8 +741,9 @@ body:has(.detail-header) {
   .header h1     { font-size: 36px; }
   .header-tag    { font-size: 15px; }
 
-  .detail-header { padding: 86px 20px 32px; }
-  .detail-body   { padding: 0 20px 64px; }
+  .detail-header         { padding-top: 86px; padding-bottom: 32px; }
+  .detail-header-inner   { padding-left: 20px; padding-right: 20px; }
+  .detail-body           { padding: 0 20px 64px; }
   footer         { padding-left: 20px; padding-right: 20px; }
 
   .cards-grid    { grid-template-columns: 1fr; gap: 16px; }
