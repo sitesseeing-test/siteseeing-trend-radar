@@ -617,7 +617,9 @@ body:has(.detail-header) {
 .cta-back {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
+  flex: 1;
   background: #0e0d14;
   color: #ffffff;
   padding: 24px;
@@ -630,8 +632,6 @@ body:has(.detail-header) {
   cursor: pointer;
   transition: background 0.15s, border-color 0.15s;
   letter-spacing: 0;
-  white-space: nowrap;
-  flex-shrink: 0;
 }
 .cta-back::before {
   content: '←';
