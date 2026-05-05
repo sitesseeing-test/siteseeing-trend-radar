@@ -60,12 +60,20 @@ document.addEventListener('DOMContentLoaded', function () {
   var sources = document.querySelector('.detail-sources');
   if (!sources) return;
 
-  var btn = document.createElement('a');
-  btn.className = 'claude-cta';
-  btn.href = '#';
-  btn.textContent = 'Darüber möchte ich mehr wissen';
+  var row = document.createElement('div');
+  row.className = 'detail-cta-row';
 
-  btn.addEventListener('click', function (e) {
+  var backBtn = document.createElement('a');
+  backBtn.className = 'cta-back';
+  backBtn.href = '../index.html';
+  backBtn.textContent = 'Alle Trends';
+
+  var claudeBtn = document.createElement('a');
+  claudeBtn.className = 'claude-cta';
+  claudeBtn.href = '#';
+  claudeBtn.textContent = 'Darüber möchte ich mehr wissen';
+
+  claudeBtn.addEventListener('click', function (e) {
     e.preventDefault();
     var title    = (document.querySelector('.detail-title')    || {}).innerText || '';
     var lead     = (document.querySelector('.detail-lead')     || {}).innerText || '';
@@ -75,5 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     window.open('https://claude.ai/new?q=' + encodeURIComponent(prompt), '_blank');
   });
 
-  sources.insertAdjacentElement('beforebegin', btn);
+  row.appendChild(backBtn);
+  row.appendChild(claudeBtn);
+  sources.insertAdjacentElement('beforebegin', row);
 });

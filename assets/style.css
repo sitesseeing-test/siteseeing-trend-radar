@@ -605,25 +605,55 @@ body:has(.detail-header) {
   color: var(--text-1);
 }
 
-/* Claude CTA button – dark */
-.claude-cta {
+/* CTA button row */
+.detail-cta-row {
+  display: flex;
+  gap: 10px;
+  max-width: 750px;
+  margin-top: 24px;
+}
+.detail-cta-row + .detail-sources { margin-top: 40px; }
+
+.cta-back {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 750px;
-  background: var(--dark);
+  gap: 8px;
+  background: #0e0d14;
   color: #ffffff;
   padding: 24px;
   border-radius: 12px;
-  border: none;
+  border: 1px solid #0e0d14;
   font-size: 18px;
   font-weight: 500;
   font-family: inherit;
   text-decoration: none;
   cursor: pointer;
-  margin-top: 24px;
-  margin-bottom: 0;
+  transition: background 0.15s, border-color 0.15s;
+  letter-spacing: 0;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.cta-back::before {
+  content: '←';
+  flex-shrink: 0;
+}
+.cta-back:hover { background: #1c1b2a; border-color: #1c1b2a; }
+
+.claude-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  background: #ffffff;
+  color: #0e0d14;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #0e0d14;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
   transition: background 0.15s;
   letter-spacing: 0;
 }
@@ -632,8 +662,7 @@ body:has(.detail-header) {
   font-size: 18px;
   flex-shrink: 0;
 }
-.claude-cta:hover { background: #1c1b2a; }
-.claude-cta + .detail-sources { margin-top: 40px; }
+.claude-cta:hover { background: #f5f5f5; }
 
 /* Sources */
 .detail-sources {
