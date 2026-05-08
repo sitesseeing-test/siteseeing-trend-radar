@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'agentic-ux-design':                '#E94F4E',
+    'european-accessibility-act':       '#E94F4E',
     'figma-april-update':               '#E94F4E',
     'container-queries-breakpoint-free':'#9182DB',
     'claude-design':                    '#E94F4E',
