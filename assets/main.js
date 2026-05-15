@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'dessn-design-im-code':             '#E94F4E',
+    'design-engineering-boom':          '#E94F4E',
+    'figma-mcp-skills':                 '#E94F4E',
     'agentic-ux-design':                '#E94F4E',
     'european-accessibility-act':       '#E94F4E',
     'figma-april-update':               '#E94F4E',
