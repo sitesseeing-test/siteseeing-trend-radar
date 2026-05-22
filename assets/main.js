@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'google-io-2026-design':            '#E94F4E',
+    'state-of-ai-design-2026':          '#E94F4E',
+    'figma-agent':                      '#E94F4E',
+    'motion-first-brand':               '#2D9C8A',
     'dessn-design-im-code':             '#E94F4E',
     'design-engineering-boom':          '#E94F4E',
     'figma-mcp-skills':                 '#E94F4E',
