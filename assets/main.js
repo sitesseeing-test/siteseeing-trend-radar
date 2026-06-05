@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'figma-make-local-code':            '#E94F4E',
+    'figma-config-2026':                '#E94F4E',
+    'css-scroll-driven-native':         '#9182DB',
     'state-of-prototyping-2026':        '#E94F4E',
     'production-ready-ux-deliverable':  '#E94F4E',
     'kinetic-variable-typography':      '#9182DB',

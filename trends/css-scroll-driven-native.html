@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Scroll-Triggered Animations: Nativ in Chrome 145 – Siteseeing Trend Radar</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="stylesheet" href="../assets/style.css?v=8">
+</head>
+<body>
+
+<nav class="site-navbar">
+  <a href="../index.html" class="navbar-logo">
+    <img src="../assets/siteseeing-logo-white.svg" alt="Siteseeing" class="navbar-logo-img">
+  </a>
+</nav>
+
+<header class="detail-header">
+  <div class="detail-header-inner">
+    <span class="detail-section-tag">Webdesign</span>
+    <h1 class="detail-title">CSS Scroll-Triggered Animations: Nativ in Chrome 145 – kein JavaScript mehr nötig</h1>
+  </div>
+</header>
+
+<div class="detail-body">
+  <div class="detail-top-nav">
+    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
+    <time class="detail-date">5. Juni 2026</time>
+  </div>
+
+  <p class="detail-lead">Chrome 145 bringt Scroll-Triggered Animations als natives CSS-Feature: Animationen können nun direkt per CSS ausgelöst werden, wenn ein Element den Viewport passiert – ohne IntersectionObserver, ohne JavaScript-Libraries. Das vereinfacht einen der häufigsten Interaktionspatterns im modernen Webdesign erheblich.</p>
+
+  <p class="detail-analysis-label">Detailanalyse</p>
+  <div class="detail-analysis">
+    <p>Bisher benötigten Scroll-Animationen – Elemente, die einblenden, wenn sie in den sichtbaren Bereich scrollen – stets JavaScript: entweder über die IntersectionObserver API oder externe Libraries wie GSAP, AOS oder Animate.css. Mit Chrome 145 hält die neue CSS-Property <code>animation-trigger</code> Einzug, die es ermöglicht, Animationen deklarativ zu steuern: Eine Animation startet, wenn ein Element einen definierten Scroll-Threshold passiert, pausiert, wenn es sich außerhalb befindet, und setzt sich fort oder setzt zurück, je nach Konfiguration.</p>
+
+    <p>Scroll-Triggered Animations sind die logische Ergänzung zu den bereits seit Chrome 115 verfügbaren Scroll-Driven Animations, die Animationen proportional zur Scroll-Position verbinden. Während Scroll-Driven Animations kontinuierlich mit dem Scroll-Fortschritt arbeiten (z.B. Parallax-Effekte), sind Scroll-Triggered Animations zeitbasiert: Sie werden an einem definierten Punkt ausgelöst und laufen dann unabhängig vom Scrollverhalten ab. Typische Anwendungsfälle sind Fade-ins beim Erscheinen von Content-Blöcken, Hero-Animationen, die beim Einblenden eines Abschnitts starten, oder Lottie-ähnliche Effekte ohne externe Abhängigkeiten.</p>
+
+    <span class="detail-stat">Chrome 115 (2023) brachte Scroll-Driven Animations, Chrome 145 (2026) ergänzt Scroll-Triggered Animations – zusammen decken sie nahezu alle gängigen scroll-basierten Interaktionspatterns in purem CSS ab.</span>
+
+    <p>Die Browser-Kompatibilität ist der entscheidende Faktor für den praktischen Einsatz: Chrome 145 liefert Entwicklerinnen und Entwicklern das Feature nativ, aber Firefox und Safari folgen erfahrungsgemäß mit Verzögerung. Für Produktionsprojekte empfiehlt sich bis zur breiten Unterstützung ein Progressive-Enhancement-Ansatz: Das native CSS-Feature als bevorzugte Lösung, JavaScript als Fallback. Die Sitepoint-Analyse zeigt, wie bereits heute ganze Carousel-Komponenten ohne JavaScript in purem CSS realisiert werden können – ein Vorgeschmack auf die nächste Evolutionsstufe des Webdesigns.</p>
+  </div>
+
+  <div class="detail-insight">
+    <p class="detail-insight-label">Für Siteseeing</p>
+    <h3 class="detail-insight-title">Performance-Vorteil als Verkaufsargument: Weniger JavaScript, schnellere Seiten</h3>
+    <p class="detail-insight-text">Für Siteseeing-Kunden, deren Websites auf Performance-Metriken wie Core Web Vitals optimiert werden sollen, ist dieser Trend direkt relevant: Jede JavaScript-Library, die durch natives CSS ersetzt wird, reduziert Bundle-Size, verbessert Ladezeit und verringert das Risiko von Rendering-Blocking. Kunden aus dem Mittelstand, die gerade Website-Relaunches planen, können von Siteseeing das Argument hören: Moderne Interaktivität ohne JavaScript-Overhead. Das ist kein technisches Detail – das ist eine messbare Verbesserung von SEO-relevanten Metriken.</p>
+    <p class="detail-massnahme-label">Sofortmaßnahme</p>
+    <p class="detail-massnahme">In einem aktuellen Kundenprojekt eine bestehende IntersectionObserver-basierte Einblend-Animation identifizieren und als CSS-only-Variante mit <code>animation-trigger</code> neu implementieren – als interne Proof-of-Concept-Demo, die zeigt, wie viel Code und Ladezeit eingespart werden kann.</p>
+  </div>
+
+  <div class="detail-sources">
+    <p class="detail-sources-label">Quellen</p>
+    <ul>
+      <li><a href="https://developer.chrome.com/blog/scroll-triggered-animations" target="_blank" rel="noopener noreferrer">CSS scroll-triggered animations are coming! – Chrome for Developers</a></li>
+      <li><a href="https://www.sitepoint.com/scrolldriven-css-in-2026-building-carousels-without-javascript/" target="_blank" rel="noopener noreferrer">Scroll-Driven CSS in 2026: Building Carousels Without JavaScript – SitePoint</a></li>
+      <li><a href="https://dev.to/nickbenksim/creating-complex-scroll-driven-animations-with-pure-css-in-2026-17l" target="_blank" rel="noopener noreferrer">Creating Complex Scroll-driven Animations with Pure CSS in 2026 – DEV Community</a></li>
+    </ul>
+  </div>
+
+  <nav class="detail-nav">
+    <a class="detail-nav-item" href="figma-config-2026.html"><span class="detail-nav-dir">← Vorheriger Trend</span><span class="detail-nav-title">Figma Config 2026: Was die Design-Community erwartet</span></a>
+    <a class="detail-nav-item next" href="state-of-prototyping-2026.html"><span class="detail-nav-dir">Nächster Trend →</span><span class="detail-nav-title">State of Prototyping Spring 2026: Claude als meistgenutztes KI-Tool neben Figma</span></a>
+  </nav>
+</div>
+
+<footer><div class="footer-inner"><p class="footer-text"><strong>Siteseeing Trend Radar · 2026</strong></p><span class="footer-badge">Erstellt mit <span>Claude Code</span></span></div></footer>
+<script>
+(function(){
+  function nextFriday9(){var n=new Date(),t=new Date(n),d=(5-n.getDay()+7)%7;if(d===0&&n.getHours()>=9)d=7;t.setDate(n.getDate()+d);t.setHours(9,0,0,0);return t;}
+  function update(){var diff=nextFriday9()-new Date(),days=Math.floor(diff/86400000),hours=Math.floor((diff%86400000)/3600000),mins=Math.floor((diff%3600000)/60000);var secs=Math.floor((diff%60000)/1000);var txt=days+'T '+String(hours).padStart(2,'0')+':'+String(mins).padStart(2,'0')+':'+String(secs).padStart(2,'0');document.querySelectorAll('.navbar-countdown').forEach(function(el){el.textContent=txt;});}
+  update();setInterval(update,1000);
+})();
+</script>
+<script src="../assets/main.js?v=8"></script>
+</body>
+</html>
