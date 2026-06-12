@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'figma-check-designs':              '#E94F4E',
+    'webflow-cloud-mcp':                '#9182DB',
+    'sonic-branding-ux':                '#2D9C8A',
     'figma-make-local-code':            '#E94F4E',
     'figma-config-2026':                '#E94F4E',
     'css-scroll-driven-native':         '#9182DB',
