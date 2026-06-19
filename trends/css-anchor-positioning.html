@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Anchor Positioning: Tooltips ohne JavaScript – Baseline 2026 – Siteseeing Trend Radar</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="stylesheet" href="../assets/style.css?v=8">
+</head>
+<body>
+
+<nav class="site-navbar">
+  <a href="../index.html" class="navbar-logo">
+    <img src="../assets/siteseeing-logo-white.svg" alt="Siteseeing" class="navbar-logo-img">
+  </a>
+</nav>
+
+<header class="detail-header">
+  <div class="detail-header-inner">
+    <span class="detail-section-tag">Webdesign</span>
+    <h1 class="detail-title">CSS Anchor Positioning: Tooltips ohne JavaScript – Baseline 2026</h1>
+  </div>
+</header>
+
+<div class="detail-body">
+  <div class="detail-top-nav">
+    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
+    <time class="detail-date">12. Juni 2026</time>
+  </div>
+
+  <p class="detail-lead">Eine der lästigsten Frontend-Aufgaben der letzten Jahrzehnte ist endlich gelöst: Das Positionieren von Tooltips, Dropdowns und Popovers relativ zu anderen Elementen erledigt der Browser jetzt nativ. CSS Anchor Positioning hat 2026 den Baseline-Status erreicht und wird vollständig in Chrome, Firefox und Safari unterstützt – ohne eine einzige Zeile JavaScript.</p>
+
+  <p class="detail-analysis-label">Detailanalyse</p>
+  <div class="detail-analysis">
+    <p>CSS Anchor Positioning ermöglicht es, ein Element per CSS an ein beliebiges anderes Element im DOM zu verankern. Der Browser übernimmt automatisch Overflow-Awareness, Viewport-Grenzen und Flip-Fallbacks. Die zentralen Eigenschaften sind überschaubar: `position-anchor` (welches Element ist der Anker), `position-area` (wo relativ zum Anker positionieren) und `position-try-fallbacks` (alternative Positionen, wenn kein Platz ist). Was früher 150 bis 200 Zeilen JavaScript-Eventlistener, ResizeObserver und Popper.js erforderte, löst jetzt ein halbes Dutzend CSS-Deklarationen.</p>
+    <p>Konkret bedeutet das das Ende von Floating UI, Popper.js und Tippy.js für neue Projekte. Chrome und Edge unterstützen Anchor Positioning seit Version 125 (Juni 2024), Firefox seit Version 147 (Anfang 2026), Safari seit Version 26. Die Anwendungsfälle sind breit: Tooltips, Dropdown-Menüs, Context-Menus, Autocomplete-Listen und Notification-Bubbles – alles, was bisher eine JavaScript-Library als Pflichtdependency hatte. Für Produktionsprojekte gilt: Anchor-Positioning-CSS in `@supports (anchor-name: --foo)`-Blöcke einwickeln, damit ältere Browser sauber auf statisches Layout zurückfallen.</p>
+    <span class="detail-stat">150+ Zeilen JavaScript für ein einfaches Tooltip schrumpfen auf wenige CSS-Deklarationen – und der Browser rechnet Positionen performanter als jede JS-Library.</span>
+    <p>Anchor Positioning gilt bereits als das bedeutendste neue Layout-Primitive seit Flexbox und Grid – weil es ein Problem löst, das ein Jahrzehnt lang JavaScript-Workarounds zwang. Für neue Projekte 2026 gibt es keinen sachlichen Grund mehr, Popper.js oder Floating UI in der `package.json` zu behalten. Die Feature-Detection ist trivial und der Fallback auf statisches Layout in den meisten Fällen akzeptabel.</p>
+  </div>
+
+  <div class="detail-insight">
+    <p class="detail-insight-label">Für Siteseeing</p>
+    <h3 class="detail-insight-title">JS-Tooltip-Bibliotheken in neuen Projekten aktiv ersetzen</h3>
+    <p class="detail-insight-text">Siteseeing-Entwickler können bei neuen Projekten und Redesigns Popper.js und Floating UI gezielt ersetzen und so Bundle-Size sowie Dependency-Overhead messbar reduzieren. Das ist kein Selbstzweck: Weniger Abhängigkeiten bedeuten weniger Sicherheitslücken, schnellere Build-Zeiten und geringeren Wartungsaufwand. Der Performance-Gewinn lässt sich gegenüber Kunden konkret kommunizieren – und Anchor Positioning ist ein überzeugendes Beispiel dafür, dass modernes CSS oft mehr leistet als externe Libraries.</p>
+    <p class="detail-massnahme-label">Sofortmaßnahme</p>
+    <p class="detail-massnahme">Im nächsten laufenden Projekt, das Tooltips oder ein Dropdown-Bauteil enthält, CSS Anchor Positioning mit `@supports`-Fallback implementieren und Popper.js bzw. Floating UI als Dependency entfernen – als internen Proof of Concept, der zeigt, wie viele Codezeilen und Package-Größe gespart werden.</p>
+  </div>
+
+  <div class="detail-sources">
+    <p class="detail-sources-label">Quellen</p>
+    <ul>
+      <li><a href="https://pockit.tools/blog/css-anchor-positioning-api-complete-guide/" target="_blank" rel="noopener noreferrer">CSS Anchor Positioning: The End of JavaScript Tooltip Libraries – Pockit</a></li>
+      <li><a href="https://www.southwellmedia.com/blog/css-2026-7-features-that-let-browsers-do-the-work" target="_blank" rel="noopener noreferrer">CSS in 2026: 7 Features That Let the Browser Do the Work – Southwell Media</a></li>
+      <li><a href="https://blog.logrocket.com/css-in-2026/" target="_blank" rel="noopener noreferrer">CSS in 2026: The new features reshaping frontend development – LogRocket</a></li>
+    </ul>
+  </div>
+
+  <nav class="detail-nav">
+    <a class="detail-nav-item" href="ux-strategie-differenzierung-2026.html"><span class="detail-nav-dir">← Vorheriger Trend</span><span class="detail-nav-title">NNg State of UX 2026: Design-Tiefe als neue Währung</span></a>
+    <a class="detail-nav-item next" href="css-grid-lanes-masonry.html"><span class="detail-nav-dir">Nächster Trend →</span><span class="detail-nav-title">CSS Grid Lanes: Natives Masonry-Layout zieht in die Browser ein</span></a>
+  </nav>
+</div>
+
+<footer><div class="footer-inner"><p class="footer-text"><strong>Siteseeing Trend Radar · 2026</strong></p><span class="footer-badge">Erstellt mit <span>Claude Code</span></span></div></footer>
+<script>
+(function(){
+  function nextFriday9(){var n=new Date(),t=new Date(n),d=(5-n.getDay()+7)%7;if(d===0&&n.getHours()>=9)d=7;t.setDate(n.getDate()+d);t.setHours(9,0,0,0);return t;}
+  function update(){var diff=nextFriday9()-new Date(),days=Math.floor(diff/86400000),hours=Math.floor((diff%86400000)/3600000),mins=Math.floor((diff%3600000)/60000);var secs=Math.floor((diff%60000)/1000);var txt=days+'T '+String(hours).padStart(2,'0')+':'+String(mins).padStart(2,'0')+':'+String(secs).padStart(2,'0');document.querySelectorAll('.navbar-countdown').forEach(function(el){el.textContent=txt;});}
+  update();setInterval(update,1000);
+})();
+</script>
+<script src="../assets/main.js?v=8"></script>
+</body>
+</html>

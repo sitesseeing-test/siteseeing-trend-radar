@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma Slots sind GA: Komponentenarchitektur mit eingebauten Guardrails – Siteseeing Trend Radar</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="stylesheet" href="../assets/style.css?v=8">
+</head>
+<body>
+
+<nav class="site-navbar">
+  <a href="../index.html" class="navbar-logo">
+    <img src="../assets/siteseeing-logo-white.svg" alt="Siteseeing" class="navbar-logo-img">
+  </a>
+</nav>
+
+<header class="detail-header">
+  <div class="detail-header-inner">
+    <span class="detail-section-tag">UX / UI Design</span>
+    <h1 class="detail-title">Figma Slots sind GA: Komponentenarchitektur mit eingebauten Guardrails</h1>
+  </div>
+</header>
+
+<div class="detail-body">
+  <div class="detail-top-nav">
+    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
+    <time class="detail-date">19. Juni 2026</time>
+  </div>
+
+  <p class="detail-lead">Seit dem 10. Juni sind Figma Slots offiziell allgemein verfügbar – und bringen mit den neuen Slot Settings eine Funktion, auf die Design-System-Teams gewartet haben: Governance direkt in der Komponentendefinition. Wer Slots konfiguriert, legt damit fest, was rein darf, wie viel davon, und wie es standardmäßig aussieht – ohne Dokumentation, die sowieso keiner liest.</p>
+
+  <p class="detail-analysis-label">Detailanalyse</p>
+  <div class="detail-analysis">
+    <p>Figma Slots ermöglichen es, innerhalb einer Main Component freie Bereiche zu definieren, die Instanz-Nutzer füllen können – ohne die Komponentenstruktur zu beschädigen. Was bislang über Varianten, Properties und stillen Konventionen gelöst wurde, erhält jetzt eine native Governance-Ebene. Die GA-Version bringt vier neue Slot Settings: Minimum und Maximum Layers (wie viele Items darf ein Slot aufnehmen?), Preferred Instances Only (nur vorausgewählte Komponenten erlauben), Empty Slot Visible by Default (Slot bleibt auf der Canvas sichtbar, wenn er leer ist) und Fill as Default (Inhalt füllt den Slot-Bereich automatisch aus).</p>
+    <p>Konkret bedeutet das für die Praxis: Ein Card-Komponent mit Slot für die Medienzeile kann jetzt so konfiguriert werden, dass maximal eine Layer erlaubt ist und nur Bild-Komponenten aus dem Design System eingesetzt werden dürfen. Früher war diese Regel informell – im Changelog, in Notion, im Teammeeting. Jetzt ist sie erzwingbar. Für Design Systems, die von mehreren Teams oder externen Partnern genutzt werden, ist das ein erheblicher Qualitätssprung: fehlerhafte Komponent-Nutzung wird schwieriger, nicht nur undokumentiert falsch.</p>
+    <span class="detail-stat">Figma Slots GA: Slot Settings mit min/max Layers, Preferred Instances und Fill-Defaults machen Design-System-Governance zur Pflicht statt zur Bitte.</span>
+    <p>Die GA-Veröffentlichung bringt auch Stabilitätsverbesserungen für das Plugin API – Slots sind jetzt als stabile Schnittstelle für Automatisierungen und interne Tools nutzbar. Im Vorfeld von Config 2026 (23.–25. Juni) ist das ein gezieltes Signal: Figma positioniert sich als Plattform für governed, skalierbare Designarbeit – nicht nur als Tool für einzelne Designer.</p>
+  </div>
+
+  <div class="detail-insight">
+    <p class="detail-insight-label">Für Siteseeing</p>
+    <h3 class="detail-insight-title">Design-System-Qualität durch Komponent-Governance messbar steigern</h3>
+    <p class="detail-insight-text">Siteseeing betreut Kunden-Design-Systeme, bei denen mehrere Personen in Figma-Files arbeiten – genau der Kontext, für den Slot Settings gebaut wurden. Mit Slots GA kann Siteseeing Komponenten so abliefern, dass sie nicht nur korrekt gebaut, sondern auch korrekt benutzbar sind: weniger Konsistenzfehler in Kundenprojekten, weniger Review-Aufwand, sauberere Handoffs. Das ist ein konkreter Qualitätsunterschied gegenüber Agenturen, die Design-Systeme ohne Governance-Ebene bauen.</p>
+    <p class="detail-massnahme-label">Sofortmaßnahme</p>
+    <p class="detail-massnahme">In einem laufenden Kundenprojekt eine häufig falsch verwendete Komponente (z.B. Card, Hero, Modal) auf Slots umstellen und Slot Settings mit Preferred Instances und Max-Layers konfigurieren – als interner Proof of Concept mit Screenshot-Dokumentation, bereit für den nächsten Design-System-Pitch.</p>
+  </div>
+
+  <div class="detail-sources">
+    <p class="detail-sources-label">Quellen</p>
+    <ul>
+      <li><a href="https://releasebot.io/updates/figma" target="_blank" rel="noopener noreferrer">Figma Release Notes – June 2026 Latest Updates – Releasebot</a></li>
+      <li><a href="https://developers.figma.com/docs/plugins/updates/" target="_blank" rel="noopener noreferrer">Figma Developer Docs: Plugin & API Updates – Figma</a></li>
+      <li><a href="https://www.figma.com/community/file/1610367877471727305/figma-slots-playground" target="_blank" rel="noopener noreferrer">Figma Slots Playground – Figma Community</a></li>
+    </ul>
+  </div>
+
+  <nav class="detail-nav">
+    <a class="detail-nav-item" href="../index.html"><span class="detail-nav-dir">← Zurück zur Übersicht</span><span class="detail-nav-title">Alle Trends</span></a>
+    <a class="detail-nav-item next" href="synthetic-users-vertrauen.html"><span class="detail-nav-dir">Nächster Trend →</span><span class="detail-nav-title">Synthetic Users 2026: Der Graben zwischen KI-Nutzung und KI-Vertrauen</span></a>
+  </nav>
+</div>
+
+<footer><div class="footer-inner"><p class="footer-text"><strong>Siteseeing Trend Radar · 2026</strong></p><span class="footer-badge">Erstellt mit <span>Claude Code</span></span></div></footer>
+<script>
+(function(){
+  function nextFriday9(){var n=new Date(),t=new Date(n),d=(5-n.getDay()+7)%7;if(d===0&&n.getHours()>=9)d=7;t.setDate(n.getDate()+d);t.setHours(9,0,0,0);return t;}
+  function update(){var diff=nextFriday9()-new Date(),days=Math.floor(diff/86400000),hours=Math.floor((diff%86400000)/3600000),mins=Math.floor((diff%3600000)/60000);var secs=Math.floor((diff%60000)/1000);var txt=days+'T '+String(hours).padStart(2,'0')+':'+String(mins).padStart(2,'0')+':'+String(secs).padStart(2,'0');document.querySelectorAll('.navbar-countdown').forEach(function(el){el.textContent=txt;});}
+  update();setInterval(update,1000);
+})();
+</script>
+<script src="../assets/main.js?v=8"></script>
+</body>
+</html>

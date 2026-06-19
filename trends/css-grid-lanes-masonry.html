@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Lanes: Natives Masonry-Layout zieht in die Browser ein – Siteseeing Trend Radar</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="stylesheet" href="../assets/style.css?v=8">
+</head>
+<body>
+
+<nav class="site-navbar">
+  <a href="../index.html" class="navbar-logo">
+    <img src="../assets/siteseeing-logo-white.svg" alt="Siteseeing" class="navbar-logo-img">
+  </a>
+</nav>
+
+<header class="detail-header">
+  <div class="detail-header-inner">
+    <span class="detail-section-tag">Webdesign</span>
+    <h1 class="detail-title">CSS Grid Lanes: Natives Masonry-Layout zieht in die Browser ein</h1>
+  </div>
+</header>
+
+<div class="detail-body">
+  <div class="detail-top-nav">
+    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
+    <time class="detail-date">12. Juni 2026</time>
+  </div>
+
+  <p class="detail-lead">Pinterest-Raster ohne JavaScript-Bibliothek – ein Frontend-Wunsch seit über einem Jahrzehnt wird endlich Realität. Das CSS Working Group hat sich auf `display: grid-lanes` als offizielle Syntax für natives Masonry-Layout geeinigt, Safari 26 hat es als erster Major-Browser vollständig implementiert, Chrome folgt.</p>
+
+  <p class="detail-analysis-label">Detailanalyse</p>
+  <div class="detail-analysis">
+    <p>Masonry-Layouts – Raster, bei denen jede Kachel in die Spalte mit dem meisten freien Platz „rutscht" – waren bisher nur mit JavaScript-Bibliotheken wie Masonry.js oder komplexen Grid-Hacks zuverlässig umsetzbar. Das CSS Working Group hat nach jahrelangem Debattieren (die Diskussion startete 2017) beschlossen, die Syntax auf `display: grid-lanes` zu vereinheitlichen. Die CSS-Tricks-Community bezeichnete den WG-Beschluss als überfällige Klarheit nach fünf Jahren Spezifikationsstreit zwischen verschiedenen Syntax-Vorschlägen.</p>
+    <p>Safari 26, veröffentlicht im Rahmen der WWDC 2026, war der erste Browser mit vollständiger Grid-Lanes-Implementierung. Chrome/Chromium 140 hatte zwischenzeitlich `display: masonry` eingebaut und migriert nun zur `grid-lanes`-Syntax. Das Grundprinzip ist einfach: `display: grid-lanes` kombiniert mit `grid-template-columns` erzeugt automatisch ein dicht gepacktes Masonry-Raster, bei dem der Browser die Kacheln selbstständig in die optimale Spalte platziert – ohne JavaScript, ohne Layout-Recalculation per Skript.</p>
+    <span class="detail-stat">Sieben Jahre Debatte im CSS Working Group enden mit Konsens: Safari 26 (WWDC 2026) ist der erste Major-Browser mit nativer `grid-lanes`-Unterstützung.</span>
+    <p>Für Produktionsprojekte empfiehlt sich heute ein Progressive-Enhancement-Ansatz: `@supports (display: grid-lanes) { ... }` stellt sicher, dass Browser ohne Unterstützung auf reguläres CSS Grid zurückfallen. Eine breite Cross-Browser-Verfügbarkeit (Chrome, Firefox, Safari) ist für Herbst 2026 zu erwarten. Es lohnt sich, bereits jetzt Masonry-Layouts in Safari 26 zu testen und Produktionsprojekte vorzubereiten.</p>
+  </div>
+
+  <div class="detail-insight">
+    <p class="detail-insight-label">Für Siteseeing</p>
+    <h3 class="detail-insight-title">Masonry-Layouts dependency-frei und performanter anbieten</h3>
+    <p class="detail-insight-text">Portfolio-Websites, Galerie-Layouts und Produkt-Raster sind typische Kundenaufträge bei Siteseeing, bei denen bisher externe Bibliotheken oder JavaScript-Hacks nötig waren. Mit CSS Grid Lanes lassen sich diese Layouts nativ, schneller und ohne Wartungsaufwand durch Library-Updates umsetzen. Für Kunden, die aktuell noch auf Masonry.js oder ähnliche Lösungen setzen, kann Siteseeing eine Migrationsempfehlung geben – das ist ein konkreter Qualitäts- und Performance-Gewinn, der sich messbar kommunizieren lässt.</p>
+    <p class="detail-massnahme-label">Sofortmaßnahme</p>
+    <p class="detail-massnahme">Im aktuellen Safari 26 (oder Safari Technology Preview) ein bestehendes Kundenprojekt mit Karten-Raster mit `display: grid-lanes` nachbauen, Screenshot-Vergleich mit der JS-basierten Version erstellen und als internen Showcase dokumentieren – bereit für den nächsten Pitch, bei dem ein Galerie- oder Portfolio-Layout gefordert ist.</p>
+  </div>
+
+  <div class="detail-sources">
+    <p class="detail-sources-label">Quellen</p>
+    <ul>
+      <li><a href="https://css-tricks.com/masonry-layout-is-now-grid-lanes/" target="_blank" rel="noopener noreferrer">Masonry Layout is Now grid-lanes – CSS-Tricks</a></li>
+      <li><a href="https://blog.openreplay.com/css-grid-lanes-masonry-layout/" target="_blank" rel="noopener noreferrer">CSS Grid Lanes: The New Native Masonry Layout – OpenReplay</a></li>
+      <li><a href="https://dev.to/bean_bean/css-grid-lanes-masonry-layout-is-here-a-complete-guide-for-2026-4686" target="_blank" rel="noopener noreferrer">CSS Grid Lanes (Masonry Layout) Is Here: A Complete Guide for 2026 – DEV Community</a></li>
+    </ul>
+  </div>
+
+  <nav class="detail-nav">
+    <a class="detail-nav-item" href="css-anchor-positioning.html"><span class="detail-nav-dir">← Vorheriger Trend</span><span class="detail-nav-title">CSS Anchor Positioning: Tooltips ohne JavaScript – Baseline 2026</span></a>
+    <a class="detail-nav-item next" href="figma-make-local-code.html"><span class="detail-nav-dir">Nächster Trend →</span><span class="detail-nav-title">Figma Make greift ins Codebase: Direktes Editing und Git-Integration im Beta</span></a>
+  </nav>
+</div>
+
+<footer><div class="footer-inner"><p class="footer-text"><strong>Siteseeing Trend Radar · 2026</strong></p><span class="footer-badge">Erstellt mit <span>Claude Code</span></span></div></footer>
+<script>
+(function(){
+  function nextFriday9(){var n=new Date(),t=new Date(n),d=(5-n.getDay()+7)%7;if(d===0&&n.getHours()>=9)d=7;t.setDate(n.getDate()+d);t.setHours(9,0,0,0);return t;}
+  function update(){var diff=nextFriday9()-new Date(),days=Math.floor(diff/86400000),hours=Math.floor((diff%86400000)/3600000),mins=Math.floor((diff%3600000)/60000);var secs=Math.floor((diff%60000)/1000);var txt=days+'T '+String(hours).padStart(2,'0')+':'+String(mins).padStart(2,'0')+':'+String(secs).padStart(2,'0');document.querySelectorAll('.navbar-countdown').forEach(function(el){el.textContent=txt;});}
+  update();setInterval(update,1000);
+})();
+</script>
+<script src="../assets/main.js?v=8"></script>
+</body>
+</html>
