@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'figma-code-layers':                '#E94F4E',
+    'figma-motion':                     '#E94F4E',
+    'kfc-bucketverse-rebrand':          '#2D9C8A',
+    'pwc-ki-jobmarkt-2026':             '#E94F4E',
+    'css-scroll-state-queries':         '#9182DB',
     'figma-slots-ga':                   '#E94F4E',
     'synthetic-users-vertrauen':        '#E94F4E',
     'logolounge-2026-report':           '#2D9C8A',

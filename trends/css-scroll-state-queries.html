@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Scroll-State Queries: Zustandsbewusstes Styling ohne JavaScript – Siteseeing Trend Radar</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="stylesheet" href="../assets/style.css?v=8">
+</head>
+<body>
+
+<nav class="site-navbar">
+  <a href="../index.html" class="navbar-logo">
+    <img src="../assets/siteseeing-logo-white.svg" alt="Siteseeing" class="navbar-logo-img">
+  </a>
+</nav>
+
+<header class="detail-header">
+  <div class="detail-header-inner">
+    <span class="detail-section-tag">Webdesign</span>
+    <h1 class="detail-title">CSS Scroll-State Queries: Zustandsbewusstes Styling ohne JavaScript</h1>
+  </div>
+</header>
+
+<div class="detail-body">
+  <div class="detail-top-nav">
+    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
+    <time class="detail-date">26. Juni 2026</time>
+  </div>
+
+  <p class="detail-lead">Browser werden layout-intelligenter: CSS Scroll-State Queries, jetzt in Safari Technology Preview 246 und Chrome 150 Beta erprobt, ermöglichen es, Elemente anders zu stylen, je nachdem ob sie feststecken, eingerastet oder scrollbar sind – ohne eine Zeile JavaScript. Ein weiterer Schritt im größten Wandel der CSS-Architektur seit Jahren.</p>
+
+  <p class="detail-analysis-label">Detailanalyse</p>
+  <div class="detail-analysis">
+    <p>CSS Scroll-State Queries sind eine Erweiterung der `@container`-Syntax: `@container scroll-state(stuck)`, `@container scroll-state(snapped)` und `@container scroll-state(scrollable)` fragen den aktuellen Scroll-Zustand eines Containers ab. Damit kann CSS zum Beispiel automatisch einen Box-Shadow hinzufügen, sobald ein Header durch Sticky-Scrolling feststeckt – bislang ein JavaScript-Workaround mit IntersectionObserver, der regelmäßig Performance-Probleme und Wartungsaufwand verursachte. Safari Technology Preview 246 (veröffentlicht Mitte Juni 2026) brachte die erste experimentelle Implementierung.</p>
+    <p>Die Cross-Browser-Koordination über Interop 2026 signalisiert zeitnahe flächendeckende Verfügbarkeit: Blink (Chrome/Edge), WebKit (Safari) und Gecko (Firefox) arbeiten aktiv an derselben Funktion – ein ungewöhnlich koordinierter Schritt, der bei CSS Anchor Positioning und Scroll-Driven Animations bereits zur schnellen Standardisierung geführt hat. Safari TP 246 brachte in derselben Release auch `word-break: auto-phrase` für sprachgerechte Zeilenumbrüche und die CSS `alpha()` Funktion aus CSS Color 5, die alle drei Browser-Engines gleichzeitig testen.</p>
+    <span class="detail-stat">Safari TP 246 ist die erste Browser-Implementation von `@container scroll-state()` – ein Signal, dass dieses Feature trotz Early-Stage-Status konkreten Interop-2026-Support hat und innerhalb weniger Monate den Stable-Status erreichen kann.</span>
+    <p>Scroll-State Queries fügen sich in den größeren Trend ein: CSS übernimmt in 2026 systematisch Aufgaben, für die bislang JavaScript nötig war. Nach `:has()`, CSS Anchor Positioning und Scroll-Driven Animations ist Scroll-State das nächste Feature, das JavaScript-Abhängigkeiten im Frontend reduziert – mit direkten Auswirkungen auf Performance, Bundlegröße und Wartungsaufwand in Kundenprojekten.</p>
+  </div>
+
+  <div class="detail-insight">
+    <p class="detail-insight-label">Für Siteseeing</p>
+    <h3 class="detail-insight-title">Sticky-Navigation sauber implementieren – und Kunden-Devteams entlasten</h3>
+    <p class="detail-insight-text">Sticky Header mit zustandsabhängigem Styling gehören zu den häufigsten Micro-Interaction-Problemen in Siteseeing-Projekten: Schatten, die beim Scroll-Start erscheinen, Navigation, die kompakter wird, wenn sie fixiert ist. CSS Scroll-State Queries lösen das nativ und performance-freundlich – kein IntersectionObserver-Overhead, keine JavaScript-Abhängigkeit, bessere Wartbarkeit für Kunden-Entwicklungsteams. Das ist ein konkretes technisches Qualitätsargument gegenüber Kunden, die nach dem Unterschied zwischen Standard- und Premium-Implementierung fragen.</p>
+    <p class="detail-massnahme-label">Sofortmaßnahme</p>
+    <p class="detail-massnahme">In Safari Technology Preview 246 das aktuelle Sticky-Header-Pattern eines bestehenden Kundenprojekts mit `@container scroll-state(stuck)` umschreiben und den Unterschied zur bisherigen JavaScript-Implementierung als Code-Vergleich dokumentieren – als Argument für technische Qualität im nächsten Kundengespräch.</p>
+  </div>
+
+  <div class="detail-sources">
+    <p class="detail-sources-label">Quellen</p>
+    <ul>
+      <li><a href="https://webkit.org/blog/18128/release-notes-for-safari-technology-preview-246/" target="_blank" rel="noopener noreferrer">Release Notes for Safari Technology Preview 246 – WebKit Blog</a></li>
+      <li><a href="https://developer.chrome.com/blog/chrome-150-beta" target="_blank" rel="noopener noreferrer">Chrome 150 Beta – Chrome for Developers</a></li>
+      <li><a href="https://web.dev/blog/baseline-digest-may-2026" target="_blank" rel="noopener noreferrer">Baseline Monthly Digest – web.dev</a></li>
+    </ul>
+  </div>
+
+  <nav class="detail-nav">
+    <a class="detail-nav-item" href="pwc-ki-jobmarkt-2026.html"><span class="detail-nav-dir">← Vorheriger Trend</span><span class="detail-nav-title">PwC AI Jobs Barometer 2026: KI verdoppelt Jobwachstum für kreative Berufe</span></a>
+    <a class="detail-nav-item next" href="figma-slots-ga.html"><span class="detail-nav-dir">Nächster Trend →</span><span class="detail-nav-title">Figma Slots sind GA: Komponentenarchitektur mit eingebauten Guardrails</span></a>
+  </nav>
+</div>
+
+<footer><div class="footer-inner"><p class="footer-text"><strong>Siteseeing Trend Radar · 2026</strong></p><span class="footer-badge">Erstellt mit <span>Claude Code</span></span></div></footer>
+<script>
+(function(){
+  function nextFriday9(){var n=new Date(),t=new Date(n),d=(5-n.getDay()+7)%7;if(d===0&&n.getHours()>=9)d=7;t.setDate(n.getDate()+d);t.setHours(9,0,0,0);return t;}
+  function update(){var diff=nextFriday9()-new Date(),days=Math.floor(diff/86400000),hours=Math.floor((diff%86400000)/3600000),mins=Math.floor((diff%3600000)/60000);var secs=Math.floor((diff%60000)/1000);var txt=days+'T '+String(hours).padStart(2,'0')+':'+String(mins).padStart(2,'0')+':'+String(secs).padStart(2,'0');document.querySelectorAll('.navbar-countdown').forEach(function(el){el.textContent=txt;});}
+  update();setInterval(update,1000);
+})();
+</script>
+<script src="../assets/main.js?v=8"></script>
+</body>
+</html>
