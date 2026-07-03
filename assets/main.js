@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'safari-mcp-server':                '#9182DB',
+    'claude-sonnet-5':                  '#E94F4E',
+    'accessibility-operational-capability': '#E94F4E',
+    'adobe-topaz-labs':                 '#2D9C8A',
     'figma-code-layers':                '#E94F4E',
     'figma-motion':                     '#E94F4E',
     'kfc-bucketverse-rebrand':          '#2D9C8A',
