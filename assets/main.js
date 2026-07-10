@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'brand-strategie-visual-direction': '#2D9C8A',
+    'mental-health-app-ui':             '#E94F4E',
+    'quiet-ai-integration':             '#E94F4E',
+    'ux-business-outcomes':             '#E94F4E',
+    'ki-erklaerungen-rollen':           '#E94F4E',
+    'ki-modalitaet-nutzerintention':    '#E94F4E',
     'safari-mcp-server':                '#9182DB',
     'claude-sonnet-5':                  '#E94F4E',
     'accessibility-operational-capability': '#E94F4E',
