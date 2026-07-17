@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'ai-akzeptanz-luecke':               '#E94F4E',
+    'cvent-presence-premium-rebrand':    '#2D9C8A',
+    'framer-ki-modellwahl':              '#9182DB',
     'brand-strategie-visual-direction': '#2D9C8A',
     'mental-health-app-ui':             '#E94F4E',
     'quiet-ai-integration':             '#E94F4E',
