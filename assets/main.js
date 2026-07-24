@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'webflow-mcp2-agentic-web':          '#9182DB',
+    'coca-cola-rebrand-ki-brandsystem':  '#2D9C8A',
+    'ki-forschung-nicht-outsourcen':     '#E94F4E',
+    'ki-chatbot-vertrauen-dimensionen':  '#E94F4E',
     'ai-akzeptanz-luecke':               '#E94F4E',
     'cvent-presence-premium-rebrand':    '#2D9C8A',
     'framer-ki-modellwahl':              '#9182DB',
