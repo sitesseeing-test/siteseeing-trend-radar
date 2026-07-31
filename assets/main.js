@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'bethesda-anniversary-rebrand':      '#2D9C8A',
+    'ux-context-design':                 '#E94F4E',
+    'product-sense-definition':          '#E94F4E',
     'webflow-mcp2-agentic-web':          '#9182DB',
     'coca-cola-rebrand-ki-brandsystem':  '#2D9C8A',
     'ki-forschung-nicht-outsourcen':     '#E94F4E',
