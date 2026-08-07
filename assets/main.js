@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'figma-ai-credit-governance':        '#E94F4E',
+    'webflow-legacy-editor-ende':        '#9182DB',
+    'eq-rebrand-wachstumsidentitaet':    '#2D9C8A',
+    'bull-bear-case-ki-design':          '#E94F4E',
+    'ki-workflow-design-md-praxisbericht': '#E94F4E',
     'bethesda-anniversary-rebrand':      '#2D9C8A',
     'ux-context-design':                 '#E94F4E',
     'product-sense-definition':          '#E94F4E',
