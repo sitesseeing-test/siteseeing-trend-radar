@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'instagram-wordmark-redesign':       '#2D9C8A',
+    '7up-lime-rebrand':                  '#2D9C8A',
+    'ki-tool-prove-framework':           '#E94F4E',
+    'dogfooding-vs-user-research':       '#E94F4E',
     'figma-ai-credit-governance':        '#E94F4E',
     'webflow-legacy-editor-ende':        '#9182DB',
     'eq-rebrand-wachstumsidentitaet':    '#2D9C8A',
