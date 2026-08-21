@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'ki-output-ist-keine-evaluation':    '#E94F4E',
+    'figma-skills-community-library':    '#E94F4E',
+    'eu-ki-kennzeichnungspflicht':       '#E94F4E',
+    'figma-weave-mcp-agenten':           '#9182DB',
+    'berlin-museum-rebrand':             '#2D9C8A',
     'instagram-wordmark-redesign':       '#2D9C8A',
     '7up-lime-rebrand':                  '#2D9C8A',
     'ki-tool-prove-framework':           '#E94F4E',

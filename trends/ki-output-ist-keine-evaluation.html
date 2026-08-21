@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ein KI-Output ist ein Beispiel, keine Evaluation – Siteseeing Trend Radar</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="stylesheet" href="../assets/style.css?v=8">
+</head>
+<body>
+
+<nav class="site-navbar">
+  <a href="../index.html" class="navbar-logo">
+    <img src="../assets/siteseeing-logo-white.svg" alt="Siteseeing" class="navbar-logo-img">
+  </a>
+</nav>
+
+<header class="detail-header">
+  <div class="detail-header-inner">
+    <span class="detail-section-tag">UX / UI Design</span>
+    <h1 class="detail-title">Ein KI-Output ist ein Beispiel, keine Evaluation</h1>
+  </div>
+</header>
+
+<div class="detail-body">
+  <div class="detail-top-nav">
+    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
+    <time class="detail-date">14. August 2026</time>
+  </div>
+
+  <p class="detail-lead">Ein einzelner gelungener KI-Output beweist gar nichts, sagt die Nielsen Norman Group: Er zeigt nur, dass eine Aufgabe grundsätzlich lösbar ist – nicht, wie zuverlässig ein System sie tatsächlich löst. Für Teams, die KI-Features testen, ist das ein methodischer Weckruf.</p>
+
+  <p class="detail-analysis-label">Detailanalyse</p>
+  <div class="detail-analysis">
+    <p>Raluca Budiu argumentiert in ihrem NN/g-Artikel, dass sich KI-Bewertung fundamental von klassischem Software-Testing unterscheidet. Deterministische Systeme, die einmal korrekt funktionieren, tun das zuverlässig wieder – Sprachmodelle dagegen sind nichtdeterministisch und liefern bei identischer Eingabe unterschiedliche Antworten. Ein Support-Chatbot kann dieselbe Frage zur Rückgaberichtlinie einmal korrekt beantworten, ein andermal Ausnahmen weglassen und ein drittes Mal fälschlich eine Rückerstattung versprechen.</p>
+    <p>Der Artikel fordert deshalb zwei Arten von Variabilität systematisch zu testen: Unterschiede zwischen verschiedenen Testfragen und Unterschiede bei wiederholten Durchläufen derselben Frage. In einem Beispiel mit zehn Kundenfragen à fünf Wiederholungen (50 Outputs gesamt) erreichten zwei Systeme identische 80-Prozent-Erfolgsquoten – zeigten aber grundverschiedene Fehlermuster: Das eine scheiterte konsistent an bestimmten Fragetypen, das andere unvorhersehbar über alle Fragen verteilt. Die gleiche Kennzahl verdeckte zwei völlig unterschiedliche Probleme.</p>
+    <span class="detail-stat">Empfohlene Methodik: mehrere repräsentative Eingaben, wiederholte Durchläufe pro Eingabe und aggregierte Kennzahlen mit Konfidenzintervallen statt Einzelbeispielen.</span>
+    <p>Budiu verweist auf bereits etablierte, aber selten genutzte Ansätze wie Pass@k-Metriken aus Coding-Benchmarks oder die Konfidenzintervalle der Chatbot Arena. Für Produktteams heißt das: Wer eine KI-Funktion nach einer einzigen überzeugenden Demo für „fertig" erklärt, verwechselt einen Machbarkeitsnachweis mit einer belastbaren Qualitätsaussage – ein Muster, das der quantitativen UX-Forschung mit ihren Stichprobengrößen strukturell sehr ähnlich ist.</p>
+  </div>
+
+  <div class="detail-insight">
+    <p class="detail-insight-label">Für Siteseeing</p>
+    <h3 class="detail-insight-title">Testprotokoll für KI-Features als Abnahmekriterium verkaufen</h3>
+    <p class="detail-insight-text">Wenn Siteseeing für Kunden KI-gestützte Interfaces konzipiert oder testet – etwa Chatbots, Suchassistenten oder generative Content-Bausteine – reicht eine einzelne überzeugende Demo im Kundenmeeting nicht als Qualitätsnachweis. Ein strukturiertes Mini-Evaluationsprotokoll (repräsentative Testfragen × mehrere Durchläufe) lässt sich als eigenständiger, klar abrechenbarer Baustein in UX-Audits für KI-Features positionieren und schützt Kunden vor bösen Überraschungen nach dem Launch.</p>
+    <p class="detail-massnahme-label">Sofortmaßnahme</p>
+    <p class="detail-massnahme">Eine einfache Testmatrix-Vorlage (10 Testfragen × 5 Durchläufe, Erfolgsquote + Fehlermuster) als internes Template anlegen, das bei jedem laufenden oder künftigen KI-Feature-Projekt eines Kunden eingesetzt werden kann.</p>
+  </div>
+
+  <div class="detail-sources">
+    <p class="detail-sources-label">Quellen</p>
+    <ul>
+      <li><a href="https://www.nngroup.com/articles/eval-ai-output/" target="_blank" rel="noopener noreferrer">Nielsen Norman Group: One AI Output Is an Example, Not an Evaluation</a></li>
+    </ul>
+  </div>
+
+  <nav class="detail-nav">
+    <a class="detail-nav-item" href="../index.html"><span class="detail-nav-dir">← Zurück zur Übersicht</span><span class="detail-nav-title">Alle Trends</span></a>
+    <a class="detail-nav-item next" href="figma-skills-community-library.html"><span class="detail-nav-dir">Nächster Trend →</span><span class="detail-nav-title">Figma Skills Community Library: Design-Wissen wird zum wiederverwendbaren KI-Baustein</span></a>
+  </nav>
+</div>
+
+<footer><div class="footer-inner"><p class="footer-text"><strong>Siteseeing Trend Radar · 2026</strong></p><span class="footer-badge">Erstellt mit <span>Claude Code</span></span></div></footer>
+<script>
+(function(){
+  function nextFriday9(){var n=new Date(),t=new Date(n),d=(5-n.getDay()+7)%7;if(d===0&&n.getHours()>=9)d=7;t.setDate(n.getDate()+d);t.setHours(9,0,0,0);return t;}
+  function update(){var diff=nextFriday9()-new Date(),days=Math.floor(diff/86400000),hours=Math.floor((diff%86400000)/3600000),mins=Math.floor((diff%3600000)/60000);var secs=Math.floor((diff%60000)/1000);var txt=days+'T '+String(hours).padStart(2,'0')+':'+String(mins).padStart(2,'0')+':'+String(secs).padStart(2,'0');document.querySelectorAll('.navbar-countdown').forEach(function(el){el.textContent=txt;});}
+  update();setInterval(update,1000);
+})();
+</script>
+<script src="../assets/main.js?v=8"></script>
+</body>
+</html>
