@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'ki-generierte-bilder-stockfotos':   '#E94F4E',
+    'ki-glossar-produktarbeit':          '#E94F4E',
+    'jif-rebrand-jifing-thing':          '#2D9C8A',
+    'figma-nested-folders':              '#E94F4E',
     'ki-output-ist-keine-evaluation':    '#E94F4E',
     'figma-skills-community-library':    '#E94F4E',
     'eu-ki-kennzeichnungspflicht':       '#E94F4E',
