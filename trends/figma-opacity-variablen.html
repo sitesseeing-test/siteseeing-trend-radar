@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figma löst Opacity-Variablen: Design-Tokens für Overlays und deaktivierte Zustände – Siteseeing Trend Radar</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="stylesheet" href="../assets/style.css?v=8">
+</head>
+<body>
+
+<nav class="site-navbar">
+  <a href="../index.html" class="navbar-logo">
+    <img src="../assets/siteseeing-logo-white.svg" alt="Siteseeing" class="navbar-logo-img">
+  </a>
+</nav>
+
+<header class="detail-header">
+  <div class="detail-header-inner">
+    <span class="detail-section-tag">UX / UI Design</span>
+    <h1 class="detail-title">Figma löst Opacity-Variablen: Design-Tokens für Overlays und deaktivierte Zustände</h1>
+  </div>
+</header>
+
+<div class="detail-body">
+  <div class="detail-top-nav">
+    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
+    <time class="detail-date">3. September 2026</time>
+  </div>
+
+  <p class="detail-lead">Seit dem 3. September lässt sich Opacity in Figma über Variablen steuern, ohne dass Farb-Tokens dafür von der Bibliothek gelöst werden müssen. Ein über zwei Jahre altes Community-Anliegen ist damit erledigt – mit direkter Wirkung auf jedes Design System mit disabled States, Overlays und Scrims.</p>
+
+  <p class="detail-analysis-label">Detailanalyse</p>
+  <div class="detail-analysis">
+    <p>Bislang war Opacity in Figma ein Bruchpunkt für sauber verwaltete Design-Tokens: Sobald ein Team die Deckkraft eines an eine Bibliotheksfarbe gebundenen Elements ändern wollte – etwa für einen deaktivierten Button, ein Modal-Overlay oder einen Scrim hinter einem Dialog – musste die Variable "detached" werden. Die Verbindung zur zentralen Farbdefinition ging verloren, und jede spätere Farbänderung in der Bibliothek musste manuell nachgezogen werden. Genau das war seit über zwei Jahren eines der meistgeforderten Themen im Figma-Community-Forum.</p>
+    <p>Mit dem neuen Release lässt sich Opacity direkt im Variablen-Modal auf jede Farbe anwenden, ohne die Bindung zur Bibliothek zu lösen. Teams können Opacity zusätzlich über eine eigene Zahlen-Variable steuern und diese gezielt für den Einsatz in Farbvariablen skalieren – das öffnet die Tür für systematische Zustands-Tokens wie "opacity/disabled" oder "opacity/scrim", die sich zentral pflegen und über alle Komponenten hinweg konsistent anwenden lassen.</p>
+    <span class="detail-stat">Was wie ein kleines Detail wirkt, betrifft in der Praxis fast jede Komponente mit Zuständen: Buttons, Inputs, Cards, Modals und Tooltips nutzen Opacity fast durchgängig für disabled, hover oder overlay States.</span>
+    <p>Für Design-System-Teams ist das mehr als Komfort: Detachte Variablen sind eine der häufigsten Ursachen für stille Design-Drift zwischen Figma-Datei und produktivem Code, weil sie bei Token-Audits oft unentdeckt bleiben. Wer jetzt bestehende Bibliotheken aufräumt, reduziert nicht nur Wartungsaufwand, sondern auch das Risiko inkonsistenter Handoffs an Entwicklung.</p>
+  </div>
+
+  <div class="detail-insight">
+    <p class="detail-insight-label">Für Siteseeing</p>
+    <h3 class="detail-insight-title">Design-System-Audits als konkreten Mehrwert verkaufen</h3>
+    <p class="detail-insight-text">Siteseeing pflegt für mehrere Kunden Figma-Design-Systeme mit exakt den Zuständen, die von diesem Update betroffen sind – disabled Buttons, Overlays, Scrims. Detachte Opacity-Werte sind ein klassischer, unsichtbarer Quality-Debt, der bei Redesigns oder Rebrandings plötzlich sichtbar wird, wenn sich die Markenfarbe ändert, aber alte Overlays hängen bleiben. Das macht sich gut als konkretes, technisches Argument in Design-System-Retainern: nicht "wir pflegen euer Design System", sondern "wir verhindern genau diese Art von Drift, bevor sie im Produkt auffällt".</p>
+    <p class="detail-massnahme-label">Sofortmaßnahme</p>
+    <p class="detail-massnahme">Diese Woche die eigene Komponentenbibliothek sowie die von zwei aktiven Design-System-Kunden nach detachten Opacity-Werten durchsuchen und mindestens eine davon auf die neuen skalierten Opacity-Variablen umstellen.</p>
+  </div>
+
+  <div class="detail-sources">
+    <p class="detail-sources-label">Quellen</p>
+    <ul>
+      <li><a href="https://www.figma.com/release-notes/" target="_blank" rel="noopener noreferrer">Figma product news and release notes – Figma</a></li>
+      <li><a href="https://forum.figma.com/suggest-a-feature-11/variables-color-alias-with-alpha-opacity-rgba-ideally-14240" target="_blank" rel="noopener noreferrer">Variables: Color alias with alpha / opacity (rgba ideally) – Figma Forum</a></li>
+    </ul>
+  </div>
+
+  <nav class="detail-nav">
+    <a class="detail-nav-item" href="canva-visual-suite-update.html"><span class="detail-nav-dir">← Vorheriger Trend</span><span class="detail-nav-title">Canva Visual Suite: 100+ neue Features für Docs, Sheets und Websites</span></a>
+    <a class="detail-nav-item next" href="sezane-rebrand-minimalismus.html"><span class="detail-nav-dir">Nächster Trend →</span><span class="detail-nav-title">Sézane rebrandet: Wenn Minimalismus die eigene Community spaltet</span></a>
+  </nav>
+</div>
+
+<footer><div class="footer-inner"><p class="footer-text"><strong>Siteseeing Trend Radar · 2026</strong></p><span class="footer-badge">Erstellt mit <span>Claude Code</span></span></div></footer>
+<script>
+(function(){
+  function nextFriday9(){var n=new Date(),t=new Date(n),d=(5-n.getDay()+7)%7;if(d===0&&n.getHours()>=9)d=7;t.setDate(n.getDate()+d);t.setHours(9,0,0,0);return t;}
+  function update(){var diff=nextFriday9()-new Date(),days=Math.floor(diff/86400000),hours=Math.floor((diff%86400000)/3600000),mins=Math.floor((diff%3600000)/60000);var secs=Math.floor((diff%60000)/1000);var txt=days+'T '+String(hours).padStart(2,'0')+':'+String(mins).padStart(2,'0')+':'+String(secs).padStart(2,'0');document.querySelectorAll('.navbar-countdown').forEach(function(el){el.textContent=txt;});}
+  update();setInterval(update,1000);
+})();
+</script>
+<script src="../assets/main.js?v=8"></script>
+</body>
+</html>

@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'canva-visual-suite-update':         '#9182DB',
+    'figma-opacity-variablen':           '#E94F4E',
+    'sezane-rebrand-minimalismus':       '#2D9C8A',
+    'subframe-agent-plugins-standard':   '#E94F4E',
+    'adobe-fuer-chatgpt':                '#E94F4E',
     'ki-generierte-bilder-stockfotos':   '#E94F4E',
     'ki-glossar-produktarbeit':          '#E94F4E',
     'jif-rebrand-jifing-thing':          '#2D9C8A',
