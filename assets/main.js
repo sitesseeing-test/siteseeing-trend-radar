@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'figma-make-preissenkung':           '#E94F4E',
+    'framer-cms-list-field':             '#9182DB',
+    'wikimedia-spain-rebrand':           '#2D9C8A',
+    'nng-ki-ux-study-guide':             '#E94F4E',
+    'webflow-rich-text-komponenten':     '#9182DB',
     'canva-visual-suite-update':         '#9182DB',
     'figma-opacity-variablen':           '#E94F4E',
     'sezane-rebrand-minimalismus':       '#2D9C8A',
