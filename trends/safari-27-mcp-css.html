@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safari 27: MCP-Support wird zum Browser-Standard – Siteseeing Trend Radar</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="stylesheet" href="../assets/style.css?v=8">
+</head>
+<body>
+
+<nav class="site-navbar">
+  <a href="../index.html" class="navbar-logo">
+    <img src="../assets/siteseeing-logo-white.svg" alt="Siteseeing" class="navbar-logo-img">
+  </a>
+</nav>
+
+<header class="detail-header">
+  <div class="detail-header-inner">
+    <span class="detail-section-tag">Webdesign</span>
+    <h1 class="detail-title">Safari 27: MCP-Support wird zum Browser-Standard</h1>
+  </div>
+</header>
+
+<div class="detail-body">
+  <div class="detail-top-nav">
+    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
+    <time class="detail-date">14. September 2026</time>
+  </div>
+
+  <p class="detail-lead">Mit Safari 27 verlässt Apples nativer MCP-Server die Technology-Preview-Phase und wird fester Bestandteil des Produktivbrowsers. Dazu kommen 58 neue Features, darunter ein vollständig anpassbares <code>&lt;select&gt;</code>-Element – zwei Wochen, nachdem bereits Chrome 152 und Firefox 156 erschienen sind.</p>
+
+  <p class="detail-analysis-label">Detailanalyse</p>
+  <div class="detail-analysis">
+    <p>Bereits im Juli hatte Apple mit der Safari Technology Preview 247 einen experimentellen MCP-Server vorgestellt, mit dem KI-Agenten wie Claude Code sich direkt mit einem Safari-Fenster verbinden können, um Websites live zu debuggen. Mit Safari 27 ist dieser Support nun kein Preview-Feature mehr, sondern läuft in der Version, die tatsächlich auf den Rechnern von Entwicklungsteams und Kunden installiert ist – ein entscheidender Unterschied für den produktiven Einsatz in Agentur-Workflows.</p>
+    <p>Bei den CSS-Neuerungen sticht das vollständig anpassbare <code>&lt;select&gt;</code> hervor: Neue Pseudo-Elemente wie <code>::picker-icon</code> und <code>::checkmark</code> erlauben es, Dropdown-Icons und Auswahlhäkchen ohne JavaScript-Ersatzkomponenten zu gestalten. Dazu kommen die <code>:heading</code>-Pseudoklasse, das <code>revert-layer</code>-Keyword und subpixelgenaues Inline-Layout für präziseres Textrendering.</p>
+    <span class="detail-stat">Safari 27 bringt laut WebKit-Blog 58 neue Features und 525 Fehlerkorrekturen mit – die umfangreichste Sammlung an Fixes in einem Safari-Release der letzten Jahre.</span>
+    <p>In Kombination mit den bereits gebündelten CSS-Baseline-Neuerungen aus Chrome und Firefox (u. a. <code>shape()</code>, scrollgesteuerte Animationen, <code>@starting-style</code>) zeigt sich: Native, JavaScript-freie Interaktions- und Formularkomponenten werden 2026 endgültig zum Standard, während gleichzeitig der Browser selbst zur Andockstelle für KI-Agenten wird.</p>
+  </div>
+
+  <div class="detail-insight">
+    <p class="detail-insight-label">Für Siteseeing</p>
+    <h3 class="detail-insight-title">Native Select-Styling in laufende Frontend-Projekte übernehmen, MCP-Debugging produktiv testen</h3>
+    <p class="detail-insight-text">Viele Siteseeing-Projekte pflegen aus Legacy-Gründen JavaScript-basierte Custom-Dropdowns, um Auswahlfelder markengerecht zu gestalten – oft mit Abstrichen bei Barrierefreiheit und Performance. Das native <code>&lt;select&gt;</code>-Styling in Safari 27 macht diesen Workaround für viele Fälle überflüssig. Gleichzeitig lohnt es sich, Safaris produktiven MCP-Server jetzt in die eigene QA-Routine aufzunehmen, statt weiterhin fast ausschließlich über Chrome zu debuggen.</p>
+    <p class="detail-massnahme-label">Sofortmaßnahme</p>
+    <p class="detail-massnahme">In einem laufenden Projekt ein JavaScript-basiertes Custom-Dropdown testweise durch natives, per Pseudo-Elementen gestyltes <code>&lt;select&gt;</code> ersetzen und den Aufwand für die restliche Komponentenbibliothek abschätzen.</p>
+  </div>
+
+  <div class="detail-sources">
+    <p class="detail-sources-label">Quellen</p>
+    <ul>
+      <li><a href="https://developer.apple.com/documentation/safari-release-notes/safari-27-release-notes" target="_blank" rel="noopener noreferrer">Safari 27 Release Notes – Apple Developer Documentation</a></li>
+      <li><a href="https://9to5mac.com/2026/09/17/webkit-blog-breaks-down-whats-new-with-safari-27-for-developers-including-mcp-support/" target="_blank" rel="noopener noreferrer">WebKit blog breaks down what's new with Safari 27 for developers, including MCP support – 9to5Mac</a></li>
+    </ul>
+  </div>
+
+  <nav class="detail-nav">
+    <a class="detail-nav-item" href="claude-cowork-chat-merge.html"><span class="detail-nav-dir">← Vorheriger Trend</span><span class="detail-nav-title">Anthropic vereint Claude Chat und Cowork zu „einem Claude"</span></a>
+    <a class="detail-nav-item next" href="nng-ai-editorial-process.html"><span class="detail-nav-dir">Nächster Trend →</span><span class="detail-nav-title">Wie die Nielsen Norman Group KI redaktionell einsetzt</span></a>
+  </nav>
+</div>
+
+<footer><div class="footer-inner"><p class="footer-text"><strong>Siteseeing Trend Radar · 2026</strong></p><span class="footer-badge">Erstellt mit <span>Claude Code</span></span></div></footer>
+<script>
+(function(){
+  function nextFriday9(){var n=new Date(),t=new Date(n),d=(5-n.getDay()+7)%7;if(d===0&&n.getHours()>=9)d=7;t.setDate(n.getDate()+d);t.setHours(9,0,0,0);return t;}
+  function update(){var diff=nextFriday9()-new Date(),days=Math.floor(diff/86400000),hours=Math.floor((diff%86400000)/3600000),mins=Math.floor((diff%3600000)/60000);var secs=Math.floor((diff%60000)/1000);var txt=days+'T '+String(hours).padStart(2,'0')+':'+String(mins).padStart(2,'0')+':'+String(secs).padStart(2,'0');document.querySelectorAll('.navbar-countdown').forEach(function(el){el.textContent=txt;});}
+  update();setInterval(update,1000);
+})();
+</script>
+<script src="../assets/main.js?v=8"></script>
+</body>
+</html>

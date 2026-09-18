@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'keen-mother-design-rebrand':        '#2D9C8A',
+    'claude-cowork-chat-merge':          '#E94F4E',
+    'safari-27-mcp-css':                 '#9182DB',
+    'nng-ai-editorial-process':          '#E94F4E',
+    'wcag3-working-draft':               '#E94F4E',
+    'death-of-the-button':               '#E94F4E',
     'figma-make-preissenkung':           '#E94F4E',
     'framer-cms-list-field':             '#9182DB',
     'wikimedia-spain-rebrand':           '#2D9C8A',
