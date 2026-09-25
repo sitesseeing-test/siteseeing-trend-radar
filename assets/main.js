@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'framer-skills-agent':              '#9182DB',
+    'nng-ki-kontext-rollen':            '#E94F4E',
+    'mclaren-rebrand-einheitliche-identitaet': '#2D9C8A',
+    'figma-weave-figma-node':           '#E94F4E',
+    'hotel-willo-rebrand':              '#2D9C8A',
     'keen-mother-design-rebrand':        '#2D9C8A',
     'claude-cowork-chat-merge':          '#E94F4E',
     'safari-27-mcp-css':                 '#9182DB',
