@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'shopify-canvas-ki-storebuilder': '#9182DB',
+    'intuit-rebrand-one-intuit': '#2D9C8A',
+    'figma-motion-lottie-audio': '#E94F4E',
+    'webflow-agentic-translation': '#9182DB',
+    'nng-paced-ki-offenlegung': '#E94F4E',
     'framer-skills-agent':              '#9182DB',
     'nng-ki-kontext-rollen':            '#E94F4E',
     'mclaren-rebrand-einheitliche-identitaet': '#2D9C8A',
