@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'figma-code-layers-specs': '#E94F4E',
+    'figma-make-payload-backend': '#9182DB',
+    'meta-forum-designer-sandbox': '#E94F4E',
+    'remote-rebrand-collins': '#2D9C8A',
+    'nng-siri-kontext-statt-intelligenz': '#E94F4E',
     'figma-agent-ga-ki-credits': '#E94F4E',
     'claude-dashboards-motion': '#E94F4E',
     'bombas-rebrand-comfort-brand': '#2D9C8A',

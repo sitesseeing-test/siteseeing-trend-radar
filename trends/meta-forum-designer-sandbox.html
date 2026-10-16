@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta Forum: Designer prototypen direkt im Produktionscode – Siteseeing Trend Radar</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="stylesheet" href="../assets/style.css?v=8">
+</head>
+<body>
+
+<nav class="site-navbar">
+  <a href="../index.html" class="navbar-logo">
+    <img src="../assets/siteseeing-logo-white.svg" alt="Siteseeing" class="navbar-logo-img">
+  </a>
+</nav>
+
+<header class="detail-header">
+  <div class="detail-header-inner">
+    <span class="detail-section-tag">UX / UI Design</span>
+    <h1 class="detail-title">Meta Forum: Designer prototypen direkt im Produktionscode</h1>
+  </div>
+</header>
+
+<div class="detail-body">
+  <div class="detail-top-nav">
+    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
+    <time class="detail-date">16. Oktober 2026</time>
+  </div>
+
+  <p class="detail-lead">Was passiert, wenn Designer nicht mehr Prototypen von der Produktion nachbauen, sondern direkt darin arbeiten? Meta hat es bei der neuen Forum-App ausprobiert – und die Ergebnisse detailliert offengelegt.</p>
+
+  <p class="detail-analysis-label">Detailanalyse</p>
+  <div class="detail-analysis">
+    <p>Forum ist Metas eigenständige App für tiefere Diskussionen in Facebook-Gruppen. Ein kleines Team baute sie von Grund auf und erreichte laut Engineering at Meta in acht Wochen Feature-Parität mit Facebook Groups. Das Prinzip: KI-Agenten durchlaufen Plan-, Build-, Test- und Korrekturzyklen, Menschen setzen Ziele, überwachen und geben frei. Meta nennt das den Schritt von „Human in the Loop“ zu „Human on the Loop“ – ausdrücklich als Ziel, nicht als erreichten Zustand.</p>
+    <p>Für Designer baute Meta eine separate Sandbox-Build-Variante, die Codebasis, Frameworks und Designsystem der echten App teilt. Prototyp-Code wird aus dem Produktions-Build komplett herauskompiliert und kann die Live-App daher nicht beschädigen. Designer und andere Disziplinen prototypen dort mit KI-Tools, ohne dass jede Änderung von einem Engineer geprüft werden muss; freigegebene Arbeit geht ohne Neubau in die Produktion. Agenten übernehmen Build-Checks, Tests und visuelle Vergleiche, Navigations-Agenten prüfen auf Regressionen.</p>
+    <span class="detail-stat">„Compiling isn’t the finish line“ – eine Aufgabe gilt bei Meta erst als erledigt, wenn automatisierte Tests und visuelle Checks bestanden sind. Besserer Kontext half laut Team mehr als besseres Prompting.</span>
+    <p>Metas Bericht macht deutlich, wohin sich die Designrolle in großen Produktteams bewegt: weg vom statischen Mockup, hin zu Änderungen im echten System, abgesichert durch Agenten und Tests. Gleichzeitig betont Meta, dass Navigations-Agenten keine Forschung mit echten Menschen ersetzen. Die Frage für Designteams lautet nicht mehr, ob sie Code anfassen, sondern welche Leitplanken sie dafür brauchen.</p>
+  </div>
+
+  <div class="detail-insight">
+    <p class="detail-insight-label">Für Siteseeing</p>
+    <h3 class="detail-insight-title">Sandbox-Prototyping als Beratungsleistung für Produktteams</h3>
+    <p class="detail-insight-text">Siteseeing arbeitet mit Kunden, die eigene Entwicklungsteams und Designsysteme haben. Metas Modell lässt sich auf diese Kunden übertragen: eine abgesicherte Prototyp-Umgebung auf Basis des Kunden-Designsystems, in der Siteseeing-Designer mit KI-Agenten realistisch prototypen. Das verkürzt den Weg von Usability-Test zu Umsetzung und macht Siteseeing für Produktteams zum Partner, der näher am Code arbeitet als klassische Agenturen.</p>
+    <p class="detail-massnahme-label">Sofortmaßnahme</p>
+    <p class="detail-massnahme">Den Meta-Engineering-Artikel im nächsten Team-Meeting gemeinsam durchgehen und für einen Bestandskunden mit React-Designsystem skizzieren, wie eine Sandbox-Umgebung für Siteseeing-Prototypen aussehen müsste – als einseitiger Vorschlag für das nächste Kundengespräch.</p>
+  </div>
+
+  <div class="detail-sources">
+    <p class="detail-sources-label">Quellen</p>
+    <ul>
+      <li><a href="https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/" target="_blank" rel="noopener noreferrer">Engineering at Meta: How Meta Built Forum With AI-Native Engineering</a></li>
+      <li><a href="https://ux-news.com/meta-forum-ai-prototyping-designers/" target="_blank" rel="noopener noreferrer">UX News: Meta Forum – KI-Prototyping für Designer</a></li>
+    </ul>
+  </div>
+
+  <nav class="detail-nav">
+    <a class="detail-nav-item" href="figma-make-payload-backend.html"><span class="detail-nav-dir">← Vorheriger Trend</span><span class="detail-nav-title">Payload in Figma Make: Datenbank, Login und CMS per Prompt</span></a>
+    <a class="detail-nav-item next" href="remote-rebrand-collins.html"><span class="detail-nav-dir">Nächster Trend →</span><span class="detail-nav-title">Remote-Rebrand: Banknoten-Farben und Würfel als Infrastruktur-Symbol</span></a>
+  </nav>
+</div>
+
+<footer><div class="footer-inner"><p class="footer-text"><strong>Siteseeing Trend Radar · 2026</strong></p><span class="footer-badge">Erstellt mit <span>Claude Code</span></span></div></footer>
+<script>
+(function(){
+  function nextFriday9(){var n=new Date(),t=new Date(n),d=(5-n.getDay()+7)%7;if(d===0&&n.getHours()>=9)d=7;t.setDate(n.getDate()+d);t.setHours(9,0,0,0);return t;}
+  function update(){var diff=nextFriday9()-new Date(),days=Math.floor(diff/86400000),hours=Math.floor((diff%86400000)/3600000),mins=Math.floor((diff%3600000)/60000);var secs=Math.floor((diff%60000)/1000);var txt=days+'T '+String(hours).padStart(2,'0')+':'+String(mins).padStart(2,'0')+':'+String(secs).padStart(2,'0');document.querySelectorAll('.navbar-countdown').forEach(function(el){el.textContent=txt;});}
+  update();setInterval(update,1000);
+})();
+</script>
+<script src="../assets/main.js?v=8"></script>
+</body>
+</html>
