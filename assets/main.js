@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'apple-music-made-by-sound': '#2D9C8A',
+    'webflow-campaigns-launch': '#9182DB',
+    'interop-2027-css-wunschliste': '#9182DB',
+    'figma-config-india-mcp-partner': '#E94F4E',
+    'nng-synthetic-users-mode-collapse': '#E94F4E',
+    'nng-context-libraries': '#E94F4E',
     'figma-code-layers-specs': '#E94F4E',
     'figma-make-payload-backend': '#9182DB',
     'meta-forum-designer-sandbox': '#E94F4E',
