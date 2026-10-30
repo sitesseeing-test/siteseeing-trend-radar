@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Duo und Safari 27.1: Das Foldable-Web kommt – mit 382 bis 951 Pixeln Viewport – Siteseeing Trend Radar</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="stylesheet" href="../assets/style.css?v=8">
+</head>
+<body>
+
+<nav class="site-navbar">
+  <a href="../index.html" class="navbar-logo">
+    <img src="../assets/siteseeing-logo-white.svg" alt="Siteseeing" class="navbar-logo-img">
+  </a>
+</nav>
+
+<header class="detail-header">
+  <div class="detail-header-inner">
+    <span class="detail-section-tag">Webdesign</span>
+    <h1 class="detail-title">iPhone Duo und Safari 27.1: Das Foldable-Web kommt – mit 382 bis 951 Pixeln Viewport</h1>
+  </div>
+</header>
+
+<div class="detail-body">
+  <div class="detail-top-nav">
+    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
+    <time class="detail-date">30. Oktober 2026</time>
+  </div>
+
+  <p class="detail-lead">Mit dem iPhone Duo hat Apple am 23. Oktober sein erstes faltbares iPhone ausgeliefert – und Safari 27.1 liefert die passenden Web-APIs gleich mit. Responsive Design muss sich damit auf ein Gerät einstellen, das zwischen schmalem Phone und fast Tablet-breitem Layout wechselt.</p>
+
+  <p class="detail-analysis-label">Detailanalyse</p>
+  <div class="detail-analysis">
+    <p>Laut WebKit-Team läuft Safari auf dem iPhone Duo mit derselben Engine wie auf allen anderen iPhones. Der Viewport reicht allerdings je nach Haltung von 382 bis 951 CSS-Pixeln Breite und von 368 bis 902 Pixeln Höhe. Neu sind zwei Developer-Preview-APIs hinter Feature-Flags: Die Device Posture API meldet per @media (device-posture: folded) oder navigator.devicePosture, ob das Gerät wie ein Buch geknickt ist. Die Viewport Segments API liefert Media Queries, sechs Umgebungsvariablen wie viewport-segment-width und window.viewport.segments für Layouts links und rechts des Falzes.</p>
+    <p>Nur drei Tage später folgte Safari 27.2 mit Feinschliff für Customizable Select: Das neue Pseudo-Element ::field-content stylt den angezeigten Optionstext, große Picker-Menüs bleiben dank safe-Alignment im Viewport. Bei Grid Lanes, dem nativen Masonry-Layout, wird flow-tolerance in fit-tolerance umbenannt – der alte Name funktioniert nur noch als veralteter Alias. Für Tests ohne Hardware empfiehlt Apple den Device Hub in Xcode 27.1.</p>
+    <span class="detail-stat">Von 382 bis 951 CSS-Pixel Breite: Ein einziges Gerät deckt jetzt nahezu die komplette Spanne von Smartphone bis kleinem Tablet ab.</span>
+    <p>WebKit rät ausdrücklich zu responsiven Layouts und Feature Detection statt Gerätesniffing. Die Foldable-APIs sind noch nicht produktionsreif, Apple sammelt Feedback und kann sie anpassen. Auch Inhalte hinter den seitlichen Systemelementen des Außendisplays sind noch nicht möglich. Wer heute mit Container Queries und flexiblen Grids arbeitet, ist gut vorbereitet – wer feste Breakpoints für iPhone-Größen pflegt, bekommt ein Problem.</p>
+  </div>
+
+  <div class="detail-insight">
+    <p class="detail-insight-label">Für Siteseeing</p>
+    <h3 class="detail-insight-title">Foldable-Check als Ergänzung zum Responsive-Audit anbieten</h3>
+    <p class="detail-insight-text">Bislang konnten viele Projekte Foldables als Android-Nische ignorieren. Mit einem iPhone im Faltformat ändert sich das für E-Commerce-, Medien- und Service-Kunden von Siteseeing mit hohem iOS-Anteil schnell. Siteseeing kann einen kompakten Foldable-Check anbieten: Layouts über die volle Viewport-Spanne testen, kritische Flows wie Checkout oder Formulare im geknickten Zustand prüfen und zeigen, wo Container Queries starre Breakpoints ersetzen sollten.</p>
+    <p class="detail-massnahme-label">Sofortmaßnahme</p>
+    <p class="detail-massnahme">Im Xcode-27.1-Device-Hub einen iPhone-Duo-Simulator anlegen und die Startseite sowie den wichtigsten Conversion-Flow von zwei Bestandskunden bei 382, 680 und 951 Pixeln Breite durchklicken – die Screenshots als Aufhänger für ein Kundengespräch nutzen.</p>
+  </div>
+
+  <div class="detail-sources">
+    <p class="detail-sources-label">Quellen</p>
+    <ul>
+      <li><a href="https://webkit.org/blog/18486/webkit-features-for-safari-27-1/" target="_blank" rel="noopener noreferrer">WebKit: WebKit Features for Safari 27.1</a></li>
+      <li><a href="https://webkit.org/blog/18515/webkit-features-for-safari-27-2/" target="_blank" rel="noopener noreferrer">WebKit: WebKit Features for Safari 27.2</a></li>
+      <li><a href="https://ppc.land/safari-27-1-on-iphone-duo-runs-web-pages-from-382-to-951-pixels-wide/" target="_blank" rel="noopener noreferrer">PPC Land: Safari 27.1 on iPhone Duo runs web pages from 382 to 951 pixels wide</a></li>
+    </ul>
+  </div>
+
+  <nav class="detail-nav">
+    <a class="detail-nav-item" href="trustpilot-rebrand-further.html"><span class="detail-nav-dir">← Vorheriger Trend</span><span class="detail-nav-title">Trustpilot zerlegt seinen Stern: Further macht das Rating zum Designsystem</span></a>
+    <a class="detail-nav-item next" href="chrome-devtools-agenten-css.html"><span class="detail-nav-dir">Nächster Trend →</span><span class="detail-nav-title">Chrome DevTools öffnen sich für Coding-Agenten – plus visueller Editor für Anchor Positioning</span></a>
+  </nav>
+</div>
+
+<footer><div class="footer-inner"><p class="footer-text"><strong>Siteseeing Trend Radar · 2026</strong></p><span class="footer-badge">Erstellt mit <span>Claude Code</span></span></div></footer>
+<script>
+(function(){
+  function nextFriday9(){var n=new Date(),t=new Date(n),d=(5-n.getDay()+7)%7;if(d===0&&n.getHours()>=9)d=7;t.setDate(n.getDate()+d);t.setHours(9,0,0,0);return t;}
+  function update(){var diff=nextFriday9()-new Date(),days=Math.floor(diff/86400000),hours=Math.floor((diff%86400000)/3600000),mins=Math.floor((diff%3600000)/60000);var secs=Math.floor((diff%60000)/1000);var txt=days+'T '+String(hours).padStart(2,'0')+':'+String(mins).padStart(2,'0')+':'+String(secs).padStart(2,'0');document.querySelectorAll('.navbar-countdown').forEach(function(el){el.textContent=txt;});}
+  update();setInterval(update,1000);
+})();
+</script>
+<script src="../assets/main.js?v=8"></script>
+</body>
+</html>
