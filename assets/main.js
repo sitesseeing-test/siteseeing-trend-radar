@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'figma-q3-agent-adoption': '#E94F4E',
+    'canva-umbau-stellenabbau': '#E94F4E',
+    'nng-ux-agentic-software-factories': '#E94F4E',
+    'nng-experience-design-agenten': '#E94F4E',
+    'chrome-157-corner-text-overflow': '#9182DB',
+    'giffgaff-rebrand-koto': '#2D9C8A',
     'figma-eigenes-editing-modell': '#E94F4E',
     'nng-ki-ux-umfrage-2026': '#E94F4E',
     'trustpilot-rebrand-further': '#2D9C8A',

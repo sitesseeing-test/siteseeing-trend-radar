@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome 157: corner-Shorthand, eigene text-overflow-Strings und HTML im Canvas – Siteseeing Trend Radar</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="stylesheet" href="../assets/style.css?v=8">
+</head>
+<body>
+
+<nav class="site-navbar">
+  <a href="../index.html" class="navbar-logo">
+    <img src="../assets/siteseeing-logo-white.svg" alt="Siteseeing" class="navbar-logo-img">
+  </a>
+</nav>
+
+<header class="detail-header">
+  <div class="detail-header-inner">
+    <span class="detail-section-tag">Webdesign</span>
+    <h1 class="detail-title">Chrome 157: corner-Shorthand, eigene text-overflow-Strings und HTML im Canvas</h1>
+  </div>
+</header>
+
+<div class="detail-body">
+  <div class="detail-top-nav">
+    <a class="detail-back" href="../index.html"><span class="detail-back-arrow">←</span> Alle Trends</a>
+    <time class="detail-date">6. November 2026</time>
+  </div>
+
+  <p class="detail-lead">Chrome 157 ist seit dem 3. November stabil und liefert gleich mehrere Features, die Webdesignerinnen und -designer direkt nutzen können. Formen, Typo-Details und Textkürzungen lassen sich jetzt mit reinem CSS umsetzen, für die bisher Workarounds nötig waren.</p>
+
+  <p class="detail-analysis-label">Detailanalyse</p>
+  <div class="detail-analysis">
+    <p>Neu ist der corner-Shorthand: border-radius und corner-shape lassen sich pro Ecke in einer Deklaration setzen – inklusive physischer und logischer Kanten-Shorthands. Damit werden abgeschrägte, gekerbte oder „squircle“-Ecken deutlich einfacher wartbar. Zudem akzeptiert text-overflow nun einen eigenen String: Statt der Ellipse kann abgeschnittener Text etwa mit „(mehr)“ enden.</p>
+    <p>Mit text-decoration-inset steuert man, wie weit Unter-, Über- und Durchstreichungen vom Textrand eingerückt sind oder darüber hinausragen – Hover-Reveal-Effekte gelingen damit ohne Pseudo-Elemente oder Gradients. Bei Anchor Positioning ersetzen die Werte anchor-valid und anchor-visible die bisherigen Plural-Varianten. Für Entwickler kommen neue HTML-Insertion- und Streaming-Methoden hinzu, die insertAdjacentHTML ablösen, sowie HTML-in-Canvas: Primitive, mit denen echtes HTML in ein canvas-Element gerendert und mit dem DOM synchron gehalten wird.</p>
+    <span class="detail-stat">Mit corner, text-decoration-inset und text-overflow-Strings verschwinden drei klassische CSS-Workarounds – zunächst in Chromium-Browsern.</span>
+    <p>Wichtig für die Praxis: Die Features sind vorerst Chromium-spezifisch. Firefox und Safari ziehen erfahrungsgemäß mit Verzögerung nach, also bleibt Progressive Enhancement Pflicht. HTML-in-Canvas ist langfristig besonders interessant für Editoren, Konfiguratoren und interaktive Visualisierungen, weil barrierefreie, echte HTML-Inhalte in Canvas-Oberflächen nutzbar werden.</p>
+  </div>
+
+  <div class="detail-insight">
+    <p class="detail-insight-label">Für Siteseeing</p>
+    <h3 class="detail-insight-title">Neue CSS-Features als Progressive-Enhancement-Baukasten ins Designsystem holen</h3>
+    <p class="detail-insight-text">Siteseeing kann die neuen Eckformen und Unterstreichungs-Effekte direkt in Komponentenbibliotheken für Kunden einbauen – mit sauberem Fallback für Safari und Firefox. Das schafft Markendifferenzierung (eigene Eckformen als Brand-Element) ohne zusätzliche Bilder oder SVG-Masken und senkt Wartungsaufwand. Für Kunden mit Produktkonfiguratoren ist HTML-in-Canvas ein Argument, heute schon über barrierefreie Canvas-Oberflächen zu sprechen.</p>
+    <p class="detail-massnahme-label">Sofortmaßnahme</p>
+    <p class="detail-massnahme">Diese Woche einen CodePen-Prototyp mit corner-shape und text-decoration-inset für die Button- und Link-Komponente eines laufenden Kundenprojekts bauen und intern mit Fallback-Screenshot für Safari im nächsten Design-Review zeigen.</p>
+  </div>
+
+  <div class="detail-sources">
+    <p class="detail-sources-label">Quellen</p>
+    <ul>
+      <li><a href="https://chromestatus.com/release-notes/157" target="_blank" rel="noopener noreferrer">Chrome Platform Status: Chrome 157 Release Notes</a></li>
+      <li><a href="https://web-standards.dev/news/2026/11/chrome-157/" target="_blank" rel="noopener noreferrer">Web Standards: What’s new in Chrome 157</a></li>
+      <li><a href="https://www.chromegeek.com/chrome-157-stable-whats-new/" target="_blank" rel="noopener noreferrer">Chrome Geek: Chrome 157 Is Out – 213 Security Fixes and What Is New</a></li>
+    </ul>
+  </div>
+
+  <nav class="detail-nav">
+    <a class="detail-nav-item" href="nng-experience-design-agenten.html"><span class="detail-nav-dir">← Vorheriger Trend</span><span class="detail-nav-title">Experience Design statt UX: NN/g erweitert das Fach um Agenten als Nutzer</span></a>
+    <a class="detail-nav-item next" href="giffgaff-rebrand-koto.html"><span class="detail-nav-dir">Nächster Trend →</span><span class="detail-nav-title">giffgaff-Rebrand von Koto: Wegweiser im Logo, Service statt nur Konnektivität</span></a>
+  </nav>
+</div>
+
+<footer><div class="footer-inner"><p class="footer-text"><strong>Siteseeing Trend Radar · 2026</strong></p><span class="footer-badge">Erstellt mit <span>Claude Code</span></span></div></footer>
+<script>
+(function(){
+  function nextFriday9(){var n=new Date(),t=new Date(n),d=(5-n.getDay()+7)%7;if(d===0&&n.getHours()>=9)d=7;t.setDate(n.getDate()+d);t.setHours(9,0,0,0);return t;}
+  function update(){var diff=nextFriday9()-new Date(),days=Math.floor(diff/86400000),hours=Math.floor((diff%86400000)/3600000),mins=Math.floor((diff%3600000)/60000);var secs=Math.floor((diff%60000)/1000);var txt=days+'T '+String(hours).padStart(2,'0')+':'+String(mins).padStart(2,'0')+':'+String(secs).padStart(2,'0');document.querySelectorAll('.navbar-countdown').forEach(function(el){el.textContent=txt;});}
+  update();setInterval(update,1000);
+})();
+</script>
+<script src="../assets/main.js?v=8"></script>
+</body>
+</html>
