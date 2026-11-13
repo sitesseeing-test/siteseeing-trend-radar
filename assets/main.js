@@ -21,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'adobe-max-2026-creative-agent-mcp': '#E94F4E',
+    'smashing-ki-feature-audit': '#E94F4E',
+    'nng-agent-harness': '#E94F4E',
+    'caixa-rebrand-tatil': '#2D9C8A',
+    'benelli-rebrand-eicma-2026': '#2D9C8A',
     'figma-q3-agent-adoption': '#E94F4E',
     'canva-umbau-stellenabbau': '#E94F4E',
     'nng-ux-agentic-software-factories': '#E94F4E',
