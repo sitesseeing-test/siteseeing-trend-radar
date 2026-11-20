@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'google-stitch-loop-produkt-agent': '#E94F4E',
+    'nng-research-in-the-loop': '#E94F4E',
+    'figma-3d-transforms': '#E94F4E',
+    'webflow-eu-hosting': '#9182DB',
+    'docker-rebrand-run-on-trust': '#2D9C8A',
+    'makers-mark-rebrand-turner-duckworth': '#2D9C8A',
     'adobe-max-2026-creative-agent-mcp': '#E94F4E',
     'smashing-ki-feature-audit': '#E94F4E',
     'nng-agent-harness': '#E94F4E',
