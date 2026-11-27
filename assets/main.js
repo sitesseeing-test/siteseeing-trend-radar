@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Nav dots: colored circle before each linked article title
   var navCategoryColors = {
+    'figma-agent-figjam-slides': '#E94F4E',
+    'nng-ki-design-rohdaten-vs-synthese': '#E94F4E',
+    'hockey-night-in-canada-rebrand-pwhl': '#2D9C8A',
     'google-stitch-loop-produkt-agent': '#E94F4E',
     'nng-research-in-the-loop': '#E94F4E',
     'figma-3d-transforms': '#E94F4E',
